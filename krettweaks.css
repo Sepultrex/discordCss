@@ -1,0 +1,147 @@
+/** 
+
+ - You can pick/remove/edit whatever you like.
+ - Dont forget to remove "@import url(....tweaks);" and copy paste the things you left here into ".theme.css" file.
+
+**//**
+██╗  ██╗██████╗ ███████╗████████╗
+██║ ██╔╝██╔══██╗██╔════╝╚══██╔══╝
+█████╔╝ ██████╔╝█████╗     ██║   
+██╔═██╗ ██╔══██╗██╔══╝     ██║   
+██║  ██╗██║  ██║███████╗   ██║   
+╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   tweaks.
+**/
+
+/*  change mention bg color */
+/* Makes it purple, you can change the values */
+.mentioned-Tre-dv .repliedMessage-3Z6XBG:before{
+  border-color:hsla(var(--mention-hue), 100%, 50%);
+}
+.mentioned-Tre-dv,.mouse-mode.full-motion .mentioned-Tre-dv:hover,.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy{
+background-color:hsla(var(--mention-hue), 100%, 50%,0.1);
+}
+.mentioned-Tre-dv:before,.menu-1QACrS:before{
+background-color:hsla(var(--mention-hue), 100%, 50%);
+}
+
+/* bottom left size */
+/* You might wanna remove this if your monitor is big */
+.container-YkUktl {
+  height: 39px;
+}
+
+
+/* Minified search bar */
+.search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {width: 27px; transition: var(--transitionspeed); background-color: transparent;}
+.search-2Mwzzq:not(.open-1F8u2c):hover .searchBar-jGtisZ {width: 240px; background-color: var(--background-tertiary);}
+.search-2Mwzzq:not(.open-1F8u2c) .iconContainer-1RqWJj {transform: scale(1.3); transition: var(--transitionspeed);}
+.search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj {transform: scale(1);}
+.search-2Mwzzq:not(.open-1F8u2c) .icon-18rqoe {color: var(--text-normal);}
+.search-2Mwzzq:not(.open-1F8u2c):hover .icon-18rqoe {color: var(--text-muted);}
+
+
+/* better looking bot tags */
+.botTag-7aX5WZ {
+  padding-right: 0;
+  background: transparent;
+}
+.botTag-7aX5WZ .botText-1fD6Qk:not(:only-child) {
+  display: none;
+}
+.botTag-7aX5WZ .botTagVerified-2KCPMa {
+  border-radius: 50%;
+  background: var(--brand-experiment);
+}
+
+
+/* Discord Message box */
+/* Makes it look nicer imo */
+.input-2g-os5,
+.scrollableContainer-15eg7h {
+  background-color: #292929;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border: 1px solid transparent;
+  outline: none;
+}
+.input-2g-os5:hover,
+.scrollableContainer-15eg7h:hover {
+  border-color: #4373c5;
+  background-color: #2e2c2c;
+}
+.input-2g-os5:focus-within,
+.scrollableContainer-15eg7h:focus-within {
+  background-color: #2e2c2c;
+  border-color: var(--color-brand-lighter);
+}
+.scrollableContainer-15eg7h {
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+
+/* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+    border-radius: 15px; 
+}
+
+
+/* edited text */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+        content: " (" attr(aria-label) ")";
+        color: var(--text-muted);
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: lowercase;
+}
+
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+/* Role background */
+.role-2TIOKu {
+    transform: translate(0);
+    overflow: hidden;
+
+    --transparency: .4;
+    border-radius: 5px;
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+    margin: 0;
+    left: unset;
+    transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT {
+    position: static;
+}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: var(--transparency);
+}
+
+/* Smaller bottom left user popout */
+#account.menu-1QACrS {
+    width: 220px;
+}
+#account.menu-1QACrS .submenu-1apzyU[aria-activedescendant^="account-status-picker"] {
+    max-width: 220px;
+}
+#account.menu-1QACrS .profileBody-3QbfPe {
+    display:none;
+}
+
+
+/* Wider title buttons */
+.winButton-3UMjdg {
+  width: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

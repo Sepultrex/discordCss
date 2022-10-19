@@ -1,0 +1,102 @@
+/* friends list bg */
+.peopleColumn-1wMU14 {
+    background-color: #202225;
+  }
+  
+  
+  /* server creator */
+  .theme-dark .footer-31IekZ , .container-36u7Lw, .container-x8Y1ix {
+    background-color: #0B0C0D;
+  }
+  .base-21yXnu, .contents-3ca1mk {
+    color: white;
+  }
+  
+  
+  /* server creator button */ 
+  .circleIconButton-1VxDrg.selected-2r1Hvo {
+    background-color: gray;
+  } 
+  .circleIconButton-1VxDrg {
+    color: gray;
+  }
+  
+  
+  /* Fix/Unclamp the About Me section, so it's not limited to just 6 lines. */
+  .clamped-2ZePhX {
+    -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+    max-height:150px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+  }
+  .clamped-2ZePhX::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  /* Hide some buttons in user context menu */
+  #user-context-invite-to-server,
+  #user-context-call,
+  #user-context-add-friend,
+  #user-context-voice-move,
+  #user-context-invite-to-listen,
+  #user-context-roles,
+  #guild-context-privacy,
+  
+  
+  /* hide the ? on left top */
+  [aria-label*='Help'],
+  
+  
+  /* text bar */
+  #textarea-context-sticker-suggestions,
+  .separator-1So4YB,
+  #textarea-context-spellcheck,
+  #textarea-context-submit-button,
+  #Suggestions,
+  [aria-label*='Open sticker picker'],
+  [href="/store"],
+  [aria-label*='Send a gift'],
+  #channel-attach-SLASH_COMMAND,
+  
+  /* Removes Chatbox from channel that don't allow you to communicate */
+  .channelTextAreaDisabled-1p2fQv,
+  
+  
+  /* Removes Follow banner on bottom of channels */
+  .wrapper-2SplAX {display: none;}
+  
+  
+  /* Hide explore public servers button*/
+  .tutorialContainer-2jwoiB + .listItem-3SmSlK {
+      display: none; 
+  }
+
+  /* Dm friends bar */
+  .container-ZMc96U.themed-Hp1KC_ {
+    background: #111111;
+  }
+  
+  /* Pinned messages bg fix */
+  .messagesPopoutWrap-3zryHW, .header-1w9Q93, .footer-5ji8u1, .messageGroupWrapper-1jf_7C {
+      background-color: #0C0C0C;
+  }
+  
+  /* Emoji Picker bg fix */
+  .header-11eigE, .wrapper-1NNaWG, .header-1ULbqO, .listWrapper-2nHLP8, .inspector-DFKXwB, .inspector-2A2Chb, [aria-label="Scroll to Unicode emoji"], .scroller-2MALzE, .list-obNEuP, .none-2-_0dP, .standardStickerShortcut-ObSns3, .contentWrapper-3vHNP2, .bodyWrapper-1eSOtW, .wrapper-22rqw6 .categoryList-2qRrlj {
+      background-color: #0C0C0C;
+  }
+  
+  /* Fix inbox */ 
+  .channelHeader-DFRX8q, .container-nwU-8G, .messageContainer-3VTXBC {
+      background-color: #0c0c0c;
+  }
+  
+  /* Forum fix */
+  .list-3FIpnh {
+      background-color: #202225;
+  }
+  
+  .rolePill-2IJ1vo {
+      border: none;
+  }
