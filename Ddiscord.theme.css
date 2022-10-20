@@ -5,7 +5,7 @@
  * @authorId 438053266585026560
  * @description 🎨 An actual Darker Discord theme 
  * @source https://github.com/kretcee/DarkerDiscord
-**//**
+**/ /**
 ██╗  ██╗██████╗ ███████╗████████╗
 ██║ ██╔╝██╔══██╗██╔════╝╚══██╔══╝
 █████╔╝ ██████╔╝█████╗     ██║   
@@ -15,35 +15,35 @@
 **/
 
 @import url("https://raw.githack.com/kretcee/DarkerDiscord/main/DDiscordmain.css");
-@import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css"); /* my fixes */ 
+@import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css"); /* my fixes */
 @import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* old discord text */
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css");
 @import url("https://gist.githack.com/kretcee/4ca32219794a1451afb01f169758bbf2/raw/8ee69e31a1ff5825fb6ea81587d7edd91104ed61/fix.css");
 
 :root {
---settingsiconssize: 18px; /*settingicons*/
---settingsiconsgap: 14px;  /*settingicons*/
---mention-hue: 10000; /* change mention bg */
---color-brand-lighter: #4373c5; /* Discord Message box */ 
---brand-experiment: #2f3136; 
---background-primary: #141414;
---background-secondary: #111111;
---background-secondary-alt: #0C0C0C;
---background-tertiary: #0D0D0D; 
---background-accent: #2B2E33; 
---background-floating: #18191c; 
---background-modifier-hover: #292C31; 
---background-modifier-active: #292C31;
---background-modifier-selected: #292C31;
---background-modifier-accent: #292C31; 
---scrollbar-thin-thumb: #202225;
---scrollbar-auto-thumb: #0C0C0C;
---scrollbar-auto-track: #292C31;
---scrollbar-auto-scrollbar-color-thumb: #202225;
---scrollbar-auto-scrollbar-color-track: #2f3136;
---channeltextarea-background: #202225;
---activity-card-background: #202225;
---background-mobile-primary: #36393f; 
---background-mobile-secondary: #2f3136;
---font-display: var(--font-primary);
+  --settingsiconssize: 18px; /*settingicons*/
+  --settingsiconsgap: 14px; /*settingicons*/
+  --mention-hue: 10000; /* change mention bg */
+  --color-brand-lighter: #4373c5; /* Discord Message box */
+  --brand-experiment: #2f3136;
+  --background-primary: #141414;
+  --background-secondary: #111111;
+  --background-secondary-alt: #0c0c0c;
+  --background-tertiary: #0d0d0d;
+  --background-accent: #2b2e33;
+  --background-floating: #18191c;
+  --background-modifier-hover: #292c31;
+  --background-modifier-active: #292c31;
+  --background-modifier-selected: #292c31;
+  --background-modifier-accent: #292c31;
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-auto-thumb: #0c0c0c;
+  --scrollbar-auto-track: #292c31;
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  --channeltextarea-background: #202225;
+  --activity-card-background: #202225;
+  --background-mobile-primary: #36393f;
+  --background-mobile-secondary: #2f3136;
+  --font-display: var(--font-primary);
 }
