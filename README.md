@@ -4,8 +4,7 @@
   <a href="#credits">credits</a>
 </p>
 
-![](https://i.imgur.com/UxPBY84.png)
----
+## ![](https://i.imgur.com/UxPBY84.png)
 
 ## Installation
 
@@ -14,6 +13,7 @@
 3. Move the [DDiscord.theme](/DDiscord.theme.css) to the BetterDiscord Theme folder
 
 ## Credits
+
 - _david_#1312
 - ꧁༒☬Sôma☬༒꧂#0570
 - [puckzxz](https://github.com/puckzxz)
