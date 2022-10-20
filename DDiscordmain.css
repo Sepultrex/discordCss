@@ -1,3 +1,33 @@
+@import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css"); /* my fixes */
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* old discord text */
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css");
+
+:root {
+  --mention-hue: 10000; /* change mention bg */
+  --color-brand-lighter: #4373c5; /* Discord Message box */
+  --brand-experiment: #2f3136;
+  --background-primary: #141414;
+  --background-secondary: #111111;
+  --background-secondary-alt: #0c0c0c;
+  --background-tertiary: #0d0d0d;
+  --background-accent: #2b2e33;
+  --background-floating: #18191c;
+  --background-modifier-hover: #292c31;
+  --background-modifier-active: #292c31;
+  --background-modifier-selected: #292c31;
+  --background-modifier-accent: #292c31;
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-auto-thumb: #0c0c0c;
+  --scrollbar-auto-track: #292c31;
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  --channeltextarea-background: #202225;
+  --activity-card-background: #202225;
+  --background-mobile-primary: #36393f;
+  --background-mobile-secondary: #2f3136;
+  --font-display: var(--font-primary);
+}
+
 /* friends list bg */
 .peopleColumn-1wMU14 {
   background-color: #202225;
