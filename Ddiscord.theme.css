@@ -1,6 +1,6 @@
 /**
  * @name Darkerdiscord
- * @version 2.3.11
+ * @version 3.0.0
  * @author Kret#0591
  * @authorId 438053266585026560
  * @description 🎨 An actual Darker Discord theme 
@@ -15,3 +15,10 @@
 **/
 
 @import url("https://raw.githack.com/kretcee/DarkerDiscord/main/DDiscordmain.css");
+
+:root {
+  --accent: 120, 0, 233;
+  --accent-alt: 192, 0, 250;
+  --avatar-size: 50px;
+  --mention-hue: 10000; /* change mention bg */
+}

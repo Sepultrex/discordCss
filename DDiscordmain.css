@@ -1,150 +1,320 @@
-@import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css"); /* my fixes */
-@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* old discord text */
-@import url("https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* old discord titlebar */
+@import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css");
+
+button {
+  --accentcolor: var(--accent-alt);
+}
 
 :root {
-  --mention-hue: 10000; /* change mention bg */
-  --color-brand-lighter: #4373c5; /* Discord Message box */
-  --brand-experiment: #2f3136;
-  --background-primary: #141414;
-  --background-secondary: #111111;
-  --background-secondary-alt: #0c0c0c;
-  --background-tertiary: #0d0d0d;
-  --background-accent: #2b2e33;
-  --background-floating: #18191c;
+  --font-primary: "Karla", sans-serif;
+  --font-display: var(--font-primary) !important;
+  --black: 0, 0, 0;
+  --white: 255, 255, 255;
+  --font-display: var(--font-primary);
+  /* BlurpleRecolor */
+  --accentcolor: var(--accent);
+  --vaccentcolor-hover: rgb(var(--accent));
+  --vaccentcolor-active: rgb(var(--accent));
+  --background-solid: #0a0a0a;
+  --background-solid-dark: #0c0c0c;
+  --background-solid-darker: #0a0a0a;
   --background-modifier-hover: #292c31;
   --background-modifier-active: #292c31;
   --background-modifier-selected: #292c31;
   --background-modifier-accent: #292c31;
-  --scrollbar-thin-thumb: #202225;
-  --scrollbar-auto-thumb: #0c0c0c;
-  --scrollbar-auto-track: #292c31;
-  --scrollbar-auto-scrollbar-color-thumb: #202225;
-  --scrollbar-auto-scrollbar-color-track: #2f3136;
+  --background-mobile-secondary: #2f3136;
   --channeltextarea-background: #202225;
   --activity-card-background: #202225;
+  --background-primary: #18191c;
+  --background-floating: #18191c;
   --background-mobile-primary: #36393f;
-  --background-mobile-secondary: #2f3136;
-  --font-display: var(--font-primary);
 }
 
-/* friends list bg */
-.peopleColumn-1wMU14 {
-  background-color: #202225;
+.theme-dark,
+.theme-light {
+  /* Discord vars */
+  --channeltextarea-background: rgba(var(--black), 1);
+  --background-primary: var(--background-solid);
+  --background-tertiary: var(--background-solid);
+  --background-secondary: var(--background-solid-dark);
+  --background-mobile-primary: var(--background-primary);
+  --background-mobile-secondary: var(--background-secondary);
+  --background-accent: var(--background-solid);
+  --background-secondary-alt: rgba(var(--black), 0.3);
+  --activity-card-background: rgba(var(--white), 0.05);
+  --background-modifier-hover: rgba(var(--black), 0.3);
+  --background-modifier-active: rgba(var(--black), 0.3);
+  --background-modifier-selected: rgba(var(--black), 0.6);
+  --elevation-low: inset 0 -1px 0 0 rgba(var(--black), 0.3);
+  --background-message-hover: rgba(var(--black), 0.2);
+  --channels-default: rgba(var(--white), 0.5);
+  --header-primary: rgba(var(--white), 1);
+  --header-secondary: rgba(var(--white), 0.6);
+  --interactive-muted: rgba(var(--white), 0.2);
+  --interactive-normal: rgba(var(--white), 0.5);
+  --interactive-hover: rgba(var(--white), 0.75);
+  --text-normal: rgba(var(--white), 0.8);
+  --text-muted: #8a8e94;
+  --text-link: rgba(var(--accent), 1);
+  --focus-primary: rgba(var(--accent), 0.5);
 }
 
-/* server creator */
-.theme-dark .footer-31IekZ,
-.container-36u7Lw,
-.container-x8Y1ix {
-  background-color: #0b0c0d;
-}
-.base-21yXnu,
-.contents-3ca1mk {
-  color: white;
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: rgba(var(--accent-alt), 1) !important;
 }
 
-/* server creator button */
-.circleIconButton-1VxDrg.selected-2r1Hvo {
-  background-color: gray;
-}
-.circleIconButton-1VxDrg {
-  color: gray;
-}
-
-/* Fix/Unclamp the About Me section, so it's not limited to just 6 lines. */
-.clamped-2ZePhX {
-  -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
-  max-height: 150px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.clamped-2ZePhX::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar-track {
+  visibility: visible !important;
+  border-radius: 8px !important;
+  border: 5px solid transparent !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-clip: padding-box !important;
 }
 
-/* Hide some buttons in user context menu */
-#user-context-invite-to-server,
-  #user-context-call,
-  #user-context-add-friend,
-  #user-context-voice-move,
-  #user-context-invite-to-listen,
-  #user-context-roles,
-  #guild-context-privacy,
-  
-  
-  /* hide the ? on left top */
-  [aria-label*='Help'],
-  
-  
-  /* text bar */
-  #textarea-context-sticker-suggestions,
-  .separator-1So4YB,
-  #textarea-context-spellcheck,
-  #textarea-context-submit-button,
-  #Suggestions,
-  [aria-label*='Open sticker picker'],
-  [href="/store"],
-  [aria-label*='Send a gift'],
-  #channel-attach-SLASH_COMMAND,
-  
-  /* Removes Chatbox from channel that don't allow you to communicate */
-  .channelTextAreaDisabled-1p2fQv,
-  
-  
-  /* Removes Follow banner on bottom of channels */
-  .wrapper-2SplAX {
-  display: none;
+.none-2Eo-qx::-webkit-scrollbar {
+  display: none !important;
 }
 
-/* Hide explore public servers button*/
-.tutorialContainer-2jwoiB + .listItem-3SmSlK {
-  display: none;
+/* Codeblocks */
+
+html pre {
+  border-radius: 0;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Dm friends bar */
-.container-ZMc96U.themed-Hp1KC_ {
-  background: #111111;
-}
-
-/* Pinned messages bg fix */
-.messagesPopoutWrap-3zryHW,
-.header-1w9Q93,
-.footer-5ji8u1,
-.messageGroupWrapper-1jf_7C {
-  background-color: #0c0c0c;
-}
-
-/* Emoji Picker bg fix */
-.header-11eigE,
-.wrapper-1NNaWG,
-.header-1ULbqO,
-.listWrapper-2nHLP8,
-.inspector-DFKXwB,
-.inspector-2A2Chb,
-[aria-label="Scroll to Unicode emoji"],
-.scroller-2MALzE,
-.list-obNEuP,
-.none-2-_0dP,
-.standardStickerShortcut-ObSns3,
-.contentWrapper-3vHNP2,
-.bodyWrapper-1eSOtW,
-.wrapper-22rqw6 .categoryList-2qRrlj {
-  background-color: #0c0c0c;
-}
-
-/* Fix inbox */
-.channelHeader-DFRX8q,
-.container-nwU-8G,
-.messageContainer-3VTXBC {
-  background-color: #0c0c0c;
-}
-
-/* Forum fix */
-.list-3FIpnh {
-  background-color: #202225;
-}
-
-.rolePill-2IJ1vo {
+pre code.hljs {
   border: none;
+  background-color: rgba(var(--white), 0.03);
+  color: rgba(var(--white), 0.7);
+  padding: 1em;
+}
+
+html code.inline,
+html code.inline {
+  background: rgba(var(--white), 0.1);
+  color: rgba(var(--white), 0.7);
+  padding: 0.3em 0.6em;
+  border-radius: 3px;
+}
+
+.none-2Eo-qx::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Titlebar */
+
+div[class*="typeWindows-"] > div:first-child {
+  color: var(--text-link);
+  background: rgba(var(--black), 0.95);
+  font-weight: 5000;
+  line-height: 40px;
+  padding: 0 12px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  z-index: -1;
+}
+
+div[class*="typeWindows-"] > div[role="button"] {
+  height: 25px;
+  width: 36px;
+}
+
+/* Header */
+
+section[class*="themed-"] {
+  height: 48px;
+  box-shadow: var(--elevation-low);
+  --background-secondary: rgba(var(--white), 0.1);
+}
+
+section[class*="themed-"]::before,
+section[class*="themed-"] ::after {
+  content: none;
+}
+
+section div[class^="toolbar"] > div[role] {
+  margin: 0 3px;
+  transition: 150ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+}
+
+section div[class^="toolbar"] > div[role][class*="selected-"] {
+  background-color: rgba(var(--white), 0.1);
+}
+
+/* Settings */
+
+div[aria-label*="_SETTINGS"],
+div[aria-label*="_DEBUG"] {
+  --background-primary: transparent;
+  --background-secondary: rgba(var(--black), 0.7);
+}
+
+div[class^="sidebarRegionScroller-"] > nav {
+  --background-secondary: transparent;
+}
+
+div[class^="contentRegion-"] {
+  --background-primary: rgba(var(--black), 0.8);
+}
+
+div[class^="contentRegion-"] div[style^="overflow: hidden scroll"] {
+  background-color: transparent;
+  --background-primary: rgba(var(--black), 0.1);
+  --background-secondary: rgba(var(--black), 0.2);
+  --background-secondary-alt: rgba(var(--black), 0.25);
+  --background-tertiary: rgba(var(--white), 0.1);
+}
+
+div[aria-label*="_SETTINGS"] aside > div {
+  --background-primary: transparent;
+}
+
+div[aria-label*="_SETTINGS"] aside > div::-webkit-scrollbar-track {
+  visibility: hidden !important;
+}
+
+.bd-addon-list {
+  --background-secondary: var(--background-solid);
+  --background-secondary-alt: var(--background-solid-dark);
+}
+
+/* Tab Bar */
+
+div[class*="topPill"],
+nav > div[role="tablist"],
+.bd-tab-bar {
+  --background-accent: rgba(var(--accent));
+  --background-modifier-hover: rgba(var(--white), 0.05);
+  --background-modifier-active: rgba(var(--white), 0.075);
+  --background-modifier-selected: rgba(var(--accent), 0.25);
+}
+
+/* Context Menu */
+
+div[role="menuitem"] {
+  --vaccentcolor: var(--accent-alt);
+}
+
+div[role="menuitem"]:active {
+  --vaccentcolor: var(--accent);
+}
+
+/* Guilds */
+
+ul[data-list-id="guildsnav"] {
+  --background-secondary: var(--background-solid);
+  --background-primary: rgba(var(--white), 0.1);
+  background-color: rgba(var(--black), 0.9);
+  border-right: 1px solid rgba(var(--black), 0.2);
+  box-shadow: inset -10px 0px 20px -10px rgba(var(--black), 0.3);
+}
+
+ul[data-list-id="guildsnav"] > div[dir] {
+  padding-top: 15px;
+}
+
+div[data-list-item-id="guildsnav___create-join-button"],
+div[data-list-item-id="guildsnav___guild-discover-button"] {
+  opacity: 0.5;
+  background-color: var(--background-solid) !important;
+  color: rgba(var(--white), 0.3) !important;
+  border: 1px dashed rgba(var(--white), 0.3);
+  border-radius: 50px;
+}
+
+div[data-list-item-id="guildsnav___create-join-button"]:hover,
+div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
+  opacity: 1;
+}
+
+/* Sidebar */
+
+.platform-win [class^="sidebar-"] {
+  border-radius: 0;
+}
+
+div[class^="sidebar-"] nav,
+#private-channels {
+  background-color: transparent;
+  --background-tertiary: rgba(var(--black), 0.35);
+}
+
+div[class^="sidebar-"] > nav > div[class^="searchBar"] {
+  height: 54px;
+}
+
+/* Outer containers */
+
+body {
+  background: var(--background-image);
+}
+
+#app-mount {
+  background-color: transparent;
+  --background-tertiary: transparent;
+  --background-secondary: transparent;
+}
+
+#app-mount > div[class^="appDevToolsWrapper-"] {
+  --background-primary: transparent;
+  --background-tertiary: transparent;
+  --background-secondary: rgba(var(--black), 0.7);
+  background-color: rgba(var(--black), 0.4);
+}
+
+nav + div [class^="sidebar-"],
+nav + div[class^="base-"] {
+  overflow: visible !important;
+  position: relative;
+  max-width: calc(100% - 72px);
+}
+
+nav + div[class^="base-"] > div[class^="notice"] {
+  border-radius: 0;
+}
+
+div[class^="base-"] > div,
+section[class*="themed-"] {
+  --background-secondary: rgba(var(--black), 0.83);
+  --background-tertiary: rgba(var(--white), 0.1);
+  --background-primary: rgba(var(--black), 0.7);
+}
+
+#app-mount > div:not([class^="appDevToolsWrapper-"]),
+.autocomplete-1vrmpx {
+  --background-primary: var(--background-solid);
+  --background-secondary: var(--background-solid-dark);
+  --background-secondary-alt: var(--background-solid-darker);
+  --background-tertiary: var(--background-solid-darker);
+}
+
+/* Tooltips */
+
+div[class^="tooltip-"] {
+  --background-floating: rgba(var(--accent-alt), 0.5);
+  --text-normal: #e0e0e0;
+}
+
+/* Buttons */
+
+button[class*="button-"][class*="color"],
+.bd-button {
+  --vaccentcolor: var(--accent-alt);
+}
+
+.bd-button {
+  --bd-blue: rgba(var(--accent-alt), 1);
 }

@@ -1,9 +1,4 @@
-/** 
-
- - You can pick/remove/edit whatever you like.
- - Dont forget to remove "@import url(....tweaks);" and copy paste the things you left here into ".theme.css" file.
-
-**/ /**
+/**
 ██╗  ██╗██████╗ ███████╗████████╗
 ██║ ██╔╝██╔══██╗██╔════╝╚══██╔══╝
 █████╔╝ ██████╔╝█████╗     ██║   
@@ -70,30 +65,6 @@
   background: var(--brand-experiment);
 }
 
-/* Discord Message box */
-/* Makes it look nicer imo */
-.input-2g-os5,
-.scrollableContainer-15eg7h {
-  background-color: #292929;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  border: 1px solid transparent;
-  outline: none;
-}
-.input-2g-os5:hover,
-.scrollableContainer-15eg7h:hover {
-  border-color: #4373c5;
-  background-color: #2e2c2c;
-}
-.input-2g-os5:focus-within,
-.scrollableContainer-15eg7h:focus-within {
-  background-color: #2e2c2c;
-  border-color: var(--color-brand-lighter);
-}
-.scrollableContainer-15eg7h {
-  border: 1px solid transparent;
-  border-radius: 25px;
-}
-
 /* Rounded Context Menu */
 .menu-1QACrS,
 .colorDefault-CDqZdO {
@@ -143,21 +114,51 @@
   opacity: var(--transparency);
 }
 
-/* Smaller bottom left user popout */
-#account.menu-1QACrS {
-  width: 220px;
-}
-#account.menu-1QACrS
-  .submenu-1apzyU[aria-activedescendant^="account-status-picker"] {
-  max-width: 220px;
-}
-#account.menu-1QACrS .profileBody-3QbfPe {
+/* Hide some buttons in user context menu */
+#user-context-invite-to-server,
+  #user-context-call,
+  #user-context-add-friend,
+  #user-context-voice-move,
+  #user-context-invite-to-listen,
+  #user-context-roles,
+  #guild-context-privacy,
+  
+  
+  /* hide the ? on left top */
+  [aria-label*='Help'],
+  
+  
+  /* text bar */
+  #textarea-context-sticker-suggestions,
+  .separator-1So4YB,
+  #textarea-context-spellcheck,
+  #textarea-context-submit-button,
+  #Suggestions,
+  [aria-label*='Open sticker picker'],
+  [href="/store"],
+  [aria-label*='Send a gift'],
+  #channel-attach-SLASH_COMMAND,
+  
+
+  /* Removes Chatbox from channel that don't allow you to communicate */
+  .channelTextAreaDisabled-1p2fQv,
+  
+  
+  /* Removes Follow banner on bottom of channels */
+  .wrapper-2SplAX {
   display: none;
 }
 
-/* Wider title buttons */
-.winButton-3UMjdg {
-  width: 32px;
-  padding-left: 10px;
-  padding-right: 10px;
+.theme-dark .autocomplete-3NRXG8,
+.list-obNEuP {
+  background-color: var(--background-solid);
+}
+
+.form-3gdLxP:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0rem;
+  width: 0rem;
 }
