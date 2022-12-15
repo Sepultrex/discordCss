@@ -4,7 +4,7 @@
   <a href="#credits">credits</a>
 </p>
 
-## ![](https://i.imgur.com/UxPBY84.png)
+## ![](https://i.imgur.com/82AvXpV.png)
 
 ## Installation
 
