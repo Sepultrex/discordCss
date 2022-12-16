@@ -1,18 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
-@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* old discord titlebar */
+@import url("https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css"); /* titlebar */
 @import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css");
 
-button {
-  --accentcolor: var(--accent-alt);
-}
-
 :root {
-  --font-primary: "Karla", sans-serif;
-  --font-display: var(--font-primary) !important;
   --black: 0, 0, 0;
   --white: 255, 255, 255;
-  --font-display: var(--font-primary);
   /* BlurpleRecolor */
   --accentcolor: var(--accent);
   --vaccentcolor-hover: rgb(var(--accent));
