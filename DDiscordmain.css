@@ -3,6 +3,13 @@
 @import url("https://raw.githack.com/kretcee/DarkerDiscord/main/krettweaks.css");
 
 :root {
+  --accent: 120, 0, 233;
+  --accent-alt: 192, 0, 250;
+  --avatar-size: 50px;
+  --mention-hue: 10000; /* change mention bg */
+}
+
+:root {
   --black: 0, 0, 0;
   --white: 255, 255, 255;
   /* BlurpleRecolor */
