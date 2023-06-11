@@ -1,4 +1,8 @@
-<h1 align="center">Darker Discord</h1>
+<h1 align="center">Dont use Betterdiscord!!!!!!!!!</h1>
+<h1 align="center">Dont use Betterdiscord!!!!!!!!!</h1>
+<h1 align="center">Dont use Betterdiscord!!!!!!!!!</h1>
+
+<h2 align="center">Darker Discord</h2>
 <p align="center">
   <a href="#installation">installation</a> |
   <a href="#credits">credits</a>
