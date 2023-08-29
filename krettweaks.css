@@ -7,6 +7,13 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   tweaks.
 **/
 
+:root {
+  --accent: 120, 0, 233;
+  --accent-alt: 192, 0, 250;
+  --avatar-size: 50px;
+  --mention-hue: 10000; /* change mention bg */
+}
+
 /*  change mention bg color */
 /* Makes it purple, you can change the values */
 .mentioned-Tre-dv .repliedMessage-3Z6XBG:before {
@@ -86,34 +93,6 @@
   display: none;
 }
 
-/* Role background */
-.role-2TIOKu {
-  transform: translate(0);
-  overflow: hidden;
-
-  --transparency: 0.4;
-  border-radius: 5px;
-}
-.role-2TIOKu .roleRemoveIcon-387wKV {
-  margin: 0;
-  left: unset;
-  transform: translate(50%, -50%);
-}
-.role-2TIOKu .roleRemoveButton-17oXnT {
-  position: static;
-}
-.role-2TIOKu .roleCircle-3K9O3d:before {
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: inherit;
-  opacity: var(--transparency);
-}
-
 /* Hide some buttons in user context menu */
 #user-context-invite-to-server,
   #user-context-call,
@@ -149,11 +128,6 @@
   display: none;
 }
 
-.theme-dark .autocomplete-3NRXG8,
-.list-obNEuP {
-  background-color: var(--background-solid);
-}
-
 .form-3gdLxP:before {
   content: "";
   position: absolute;
@@ -161,4 +135,195 @@
   left: 0;
   height: 0rem;
   width: 0rem;
+}
+
+[data-id*="1059068126051971122"] {
+  display: none;
+}
+
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs)
+  > .wrapper-30-Nkg {
+  padding: 0 0 0 16px;
+}
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs)
+  > .wrapper-30-Nkg.compact-2Nkcau {
+  padding: 0 0 0 108px;
+}
+.scrollerInner-2PPAp2 > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs) {
+  margin: 0;
+}
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1.expanded-3lghlw:not(.backgroundFlash-1X5jVs) {
+  background-color: var(--info-danger-background);
+}
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs)
+  .messageListItem-ZZ7v6g
+  .groupStart-3Mlgv1,
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs, .expanded-3lghlw)
+  + .messageListItem-ZZ7v6g
+  .groupStart-3Mlgv1 {
+  margin-top: 0;
+}
+.scrollerInner-2PPAp2
+  > .groupStart-3Mlgv1:not(.backgroundFlash-1X5jVs)
+  .messageListItem-ZZ7v6g {
+  opacity: 0.5;
+}
+.blockedSystemMessage-3FmE9n .iconContainer-2rPbqG {
+  display: none;
+}
+.blockedMessageText-3Zeg3y {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--interactive-muted);
+}
+.blockedMessageText-3Zeg3y:hover {
+  text-decoration: underline;
+}
+.blockedMessageText-3Zeg3y:hover,
+.groupStart-3Mlgv1.expanded-3lghlw .blockedMessageText-3Zeg3y {
+  color: var(--info-danger-foreground);
+}
+.blockedAction-2cPk2G {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+}
+.blockedMessageText-3Zeg3y:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 14px;
+  pointer-events: none;
+  background-color: currentColor;
+  -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z M5 6.99902V18.999C5 20.101 5.897 20.999 7 20.999H17C18.103 20.999 19 20.101 19 18.999V6.99902H5ZM11 17H9V11H11V17ZM15 17H13V11H15V17Z" ></path></svg>')
+    center/contain no-repeat;
+}
+
+.imageAccessory-2yA7Kb {
+  left: unset;
+  right: 6px;
+}
+
+/* profile name connected account thing*/
+.connectedAccountContainer-3aLMHJ {
+  border-width: 2px;
+  border-top-left-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+  border-top-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.connectedAccountContainer-3aLMHJ:has(.connectedAccountOpenIcon-3i81Tz:hover) {
+  background-color: var(--profile-body-divider-color);
+}
+
+.flowerStarContainer-1QeD-L.connectedAccountVerifiedIcon-3EPFPC > svg > path {
+  fill: var(--profile-body-divider-color);
+  filter: brightness(1) contrast(2);
+}
+/* profile name connected account thing*/
+
+/* Remove stupid birthday button */
+.channel-1Shao0:has([href="/activities"]) {
+  display: none;
+}
+
+.channel-1Shao0[aria-posinset="1"] {
+  background-color: var(--background-primary);
+  border-radius: 0px;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+  padding-bottom: 0px;
+}
+.channel-1Shao0[aria-posinset="2"] {
+  background-color: var(--background-primary);
+  border-radius: 0px;
+  padding-bottom: 0px;
+}
+.channel-1Shao0[aria-posinset="3"] {
+  background-color: var(--background-primary);
+  border-bottom-left-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+  border-radius: 0px;
+  margin-bottom: 7px;
+  padding-bottom: 0px;
+}
+.channel-1Shao0[aria-posinset="4"] {
+  border-radius: 7px;
+  background-color: var(--background-primary);
+  margin-bottom: 0px;
+}
+.channel-1Shao0[aria-setsize="112"]:not([aria-posinset="4"]):not(
+    [aria-posinset="3"]
+  ):not([aria-posinset="2"]):not([aria-posinset="1"]) {
+  background-color: var(--background-primary);
+  border-radius: 0px;
+}
+.channel-1Shao0[aria-setsize="112"][aria-posinset="7"]:not(
+    [aria-posinset="4"]
+  ):not([aria-posinset="3"]):not([aria-posinset="2"]):not([aria-posinset="1"]) {
+  background-color: var(--background-primary);
+  border-radius: 0px;
+  border-top-left-radius: 7px !important;
+  border-top-right-radius: 7px !important;
+}
+.privateChannelsHeaderContainer-1UWASm {
+  padding-top: 13px;
+}
+.searchBar-3TnChZ {
+  background-color: var(--background-secondary);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+/* hammin */
+[class^="panels-3wFtMD"]::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  left: 200px;
+  margin-top: -36px;
+  position: absolute;
+  background-image: url("https://cdn.discordapp.com/emojis/1055070511450828861.gif?size=96&quality=lossless");
+}
+
+a[href="https://support.discord.com"], /* help button */
+.nowPlayingColumn-1eCBCN, /* active now sidebar */
+.newChannel-3q3LPr, /* the "NEW" text thats next to channels */
+div[aria-label*="Show User Profile"], /* user profile button */
+button[aria-label="Send a gift"] /* send gift button */ {
+  display: none;
+}
+
+[class*="quickswitcher-"]
+  [class*="protip-"]
+  [class*="tip-"]
+  [class*="anchor-"] {
+  display: none;
+}
+
+[id="message-report"],
+[id="message-thread"],
+[id="message-apps"],
+[id="message-copy-text"],
+[id="message-tts"] {
+  display: none;
+}
+
+#emoji-picker-tab-panel
+  :is([class^="badgeLabel-"], [class^="newlyAddedBadge"]) {
+  display: none;
+}
+
+[class^="newlyAddedHighlight"],
+[class^="newlyAddedHighlight"]:hover {
+  border: none;
 }
