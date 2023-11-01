@@ -7,6 +7,7 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   tweaks.
 **/
 @import url("https://minidiscordthemes.github.io/FluentStatusIcons/FluentStatusIcons.theme.css");
+@import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css); 
 
 :root {
   --theme-h: 0;
