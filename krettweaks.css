@@ -244,3 +244,9 @@ display: none;
   display: none;
 }
 
+/* show the url masked links take you to in the message */
+.anchor_c8ddc0[title$=")"]::after {
+    font-size: 0.7rem;
+    content: " (" attr(href) ")";
+    filter: grayscale(0.4);
+}
