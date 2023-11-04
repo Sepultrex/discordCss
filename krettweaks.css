@@ -267,3 +267,8 @@ display: none;
   border-radius: 0 8px 0 0;
   background: var(--bg-overlay-3,var(--channeltextarea-background));
 }
+
+
+.linkBottom_bac113{
+  display: none;
+}
