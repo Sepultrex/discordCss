@@ -250,3 +250,24 @@ display: none;
     content: " (" attr(href) ")";
     filter: grayscale(0.4);
 }
+
+/* Make jump to present/jump to original/mark as read bars smaller and hug the right */
+.barBase__4e0ba {
+  width: fit-content;
+  margin-left: auto;
+}
+/* End make jump to present/jump to original/mark as read bars smaller and hug the right */
+
+[class^=form-]:before, [class^=children-]:after {
+  display: none;
+}
+
+/* Move typing indicators */
+.typing__6fd1d {
+  top: -24px;
+  left: 0px;
+  width: fit-content;
+  padding-right: 9px;
+  border-radius: 0 8px 0 0;
+  background: var(--bg-overlay-3,var(--channeltextarea-background));
+}
