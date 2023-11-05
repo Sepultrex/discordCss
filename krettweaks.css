@@ -5,7 +5,6 @@
 ██╔═██╗ ██╔══██╗██╔══╝     ██║   
 ██║  ██╗██║  ██║███████╗   ██║   
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   tweaks.
-
 **/
 
 @import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css); 
@@ -250,21 +249,6 @@ display: none;
 /* End make jump to present/jump to original/mark as read bars smaller and hug the right */
 
 [class^=form-]:before, [class^=children-]:after {
-  display: none;
-}
-
-/* Move typing indicators */
-.typing__6fd1d {
-  top: -24px;
-  left: 0px;
-  width: fit-content;
-  padding-right: 9px;
-  border-radius: 0 8px 0 0;
-  background: var(--bg-overlay-3,var(--channeltextarea-background));
-}
-
-
-.linkBottom_bac113{
   display: none;
 }
 
