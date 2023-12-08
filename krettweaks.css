@@ -261,6 +261,10 @@ display: none;
 [class^=bar__]:has([class^=voiceChannelsIcon__]) {
     display: none;
 }
+/* Hide show all voice channels button */ 
+.voiceChannelsButton__46c37 {
+    display:none;
+}
 
 /* fancy channel selected box */
 .modeSelected__487d6 .link__95dc0:before,
@@ -290,3 +294,28 @@ display: none;
 .modeConnected__1c02e .hoverable__46c19:hover .pencilIcon__1ec62 {
   color: var(--background-primary);
 }
+
+/* channels and roles tab */
+.container__10dc7, .header__60bef, .scrollerContainer_bf5dbd .container__7590f, .theme-dark .scrollerContainer_bf5dbd, .theme-dark .emptyPage__3e15d, .theme-dark .container__7590f  {
+  background-color: var(--home-background) !important;
+}
+/* remove the funny little gradient on ^ */
+.theme-dark .innerHeader_afca2f:after {
+    display: none;
+}
+
+/* Compact experiment server config warning */
+#experiments-tab [class^="description_"] { overflow: hidden; }
+#experiments-tab [class^="description_"] div:first-of-type { float: left; }
+#experiments-tab [class^="description_"] div+div {
+    font-size: 0;
+    line-height: 0; 
+    float: right;
+}
+#experiments-tab [class^="description_"] div+div:after {
+    filter: grayscale();
+    content: "⚠ No server configuration";
+    line-height: 20px;
+    font-size: 14px;
+}
+
