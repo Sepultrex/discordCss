@@ -261,3 +261,32 @@ display: none;
 [class^=bar__]:has([class^=voiceChannelsIcon__]) {
     display: none;
 }
+
+/* fancy channel selected box */
+.modeSelected__487d6 .link__95dc0:before,
+.modeConnected__1c02e .link__95dc0:before {
+  background-color: var(--accent-4); /* Replace with var(--brand-experiment) for accent color */
+  border-radius: 7px;
+}
+.modeSelected__487d6 .icon_eff5d4,
+.modeSelected__487d6:hover .icon_eff5d4,
+.modeConnected__1c02e .icon_eff5d4,
+.modeConnected__1c02e:hover .icon_eff5d4 {
+  --channel-icon: var(--background-primary);
+}
+.modeConnected__1c02e {
+}
+.modeSelected__487d6 .name__8d1ec,
+.modeSelected__487d6:hover .name__8d1ec,
+.modeConnected__1c02e .name__8d1ec,
+.modeConnected__1c02e:hover .name__8d1ec,
+.modeSelected__487d6 .actionIcon_d679b5,
+.modeSelected__487d6:hover .actionIcon_d679b5,
+.modeConnected__1c02e .actionIcon_d679b5,
+.modeConnected__1c02e:hover .actionIcon_d679b5,
+.modeConnected__1c02e .statusText_e0f90b,
+.modeConnected__1c02e .pencilIcon__1ec62,
+.modeConnected__1c02e .hoverable__46c19:hover .statusText_e0f90b,
+.modeConnected__1c02e .hoverable__46c19:hover .pencilIcon__1ec62 {
+  color: var(--background-primary);
+}
