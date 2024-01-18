@@ -340,6 +340,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* Hide invite to server box from channel list */
-.iconItem__8e3b8[aria-label="Create Invite"] svg {
-  display: none;
+.iconItem__8e3b8[aria-label="Create Invite"] svg{
+  display:none;
 }
