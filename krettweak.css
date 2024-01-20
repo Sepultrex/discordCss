@@ -343,3 +343,20 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 .iconItem__8e3b8[aria-label="Create Invite"] svg{
   display:none;
 }
+
+/* some more silly hover animations */
+button.button__4f306 /* make user panel buttons round */ {
+    border-radius: 50%;
+}
+.button__4f306[aria-label="User Settings"] /* settings button */, 
+.attachButton_b1db83 .attachButtonInner__3ce2b /* upload button */,
+.emojiButton__30ec7 .contents_fb6220 /* emoji button */,
+.closeButton__34341 /* settings exit button */ {
+    transition: transform 1s ease;
+}
+.button__4f306[aria-label="User Settings"]:hover,
+.attachButton_b1db83:hover .attachButtonInner__3ce2b,
+.emojiButton__30ec7:hover .contents_fb6220,
+.closeButton__34341:hover {
+    transform: rotate(360deg);
+}
