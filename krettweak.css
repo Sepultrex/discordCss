@@ -402,34 +402,3 @@ button.button__4f306 /* make user panel buttons round */ {
 .ephemeral_c26b64:hover {
     background-color: hsl(var(--brand-500-hsl)/0.03) !important;
 }
-
-/* Linked images same max width as attachments */
-:is([class^="inlineMediaEmbed_"], [class^="messageAttachment_"]) {
-  max-width: 550px !important;
-  max-height: 550px !important;
-}
-:is([class^="inlineMediaEmbed_"], [class^="messageAttachment_"]) [class^="imageWrapper_"] {
-  max-width: 550px !important;
-  max-height: 550px !important;
-  width: max-content !important;
-  height: max-content !important;
-  aspect-ratio: unset !important;
-}
-:is([class^="inlineMediaEmbed_"], [class^="messageAttachment_"]) [class^="imageWrapper_"] :is(img, video) {
-  max-width: 550px !important;
-  max-height: 550px !important;
-  width: max-content !important;
-  height: max-content !important;
-}
-:is([class^="inlineMediaEmbed_"], [class^="messageAttachment_"]) [class^="imageWrapper_"] [class^="loadingOverlay_"] {
-  aspect-ratio: unset !important;
-}
-[class^="oneByOneGrid_"] {
-  max-height: 550px !important;
-}
-[class^="imageContainer_"]:has([aria-label="GIF"]) + [class^="altText_"] {
-  display: none;
-}
-
-
-
