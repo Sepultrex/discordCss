@@ -2,7 +2,7 @@
 
 Just add this link on top of your customcss 
 ```
-@import url("https://raw.githubusercontent.com/kretcee/discordCss/main/krettweaks.css");
+@import url("https://raw.githubusercontent.com/kretcee/discordCss/main/krettweak.user.css");
 ```
 Just updating my old css fixes to here
 
