@@ -412,5 +412,4 @@ button.button__4f306 /* make user panel buttons round */ {
     background-color: var(--background-message-highlight-hover) !important;
 }
 .ephemeral_c26b64:hover {
-    background-color: hsl(var(--brand-500-hsl)/0.03) !important;
-}
+    background-color: hsl(var(--brand-500-hsl)/0.03) !important;}
