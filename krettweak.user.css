@@ -400,16 +400,3 @@ button.button__4f306 /* make user panel buttons round */ {
 [class^=uploadDropModal_] strong, /* file drag upload */
 [class^=channelNameSpan_] /* inbox */
  { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
-
-/* Fixes discords mention color oopsie.*/
-.message__80c10:hover {
-    background-color: var(--background-message-hover) !important;
-}
-.mentioned__58017:hover {
-    background-color: var(--background-mentioned-hover) !important;
-}
-.replying_d7b6ad:hover {
-    background-color: var(--background-message-highlight-hover) !important;
-}
-.ephemeral_c26b64:hover {
-    background-color: hsl(var(--brand-500-hsl)/0.03) !important;}
