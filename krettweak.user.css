@@ -399,4 +399,4 @@ button.button__4f306 /* make user panel buttons round */ {
 [class^=headerChannelContainer_] > div, /* invite to channel dialog */
 [class^=uploadDropModal_] strong, /* file drag upload */
 [class^=channelNameSpan_] /* inbox */
- { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
+ { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); };
