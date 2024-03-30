@@ -94,7 +94,7 @@
   --divider-color: var(--accent-2);
 }
 /* .icons__10dd7   /* channel mute button strikethrough */
-.strikethrough__29b20 /* mute button strikethrough */ {
+.icon__1e4c2 /* mute button strikethrough */ {
   color: var(--accent-2) !important;
 }
 path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
@@ -208,7 +208,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* Fav gif icon */
-.imageAccessory__64ab2 {
+.imageAccessory__9614b {
   left: unset;
   right: 6px;
 }
