@@ -105,6 +105,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   color: var(--accent-2) !important;
 }
 
+
 .theme-dark {
   --blue-345: var(--accent-1); /* links */
   --brand-260: var(--accent-2); /* "NEW" channel list indicator */
@@ -388,3 +389,9 @@ button.button__4f306 /* make user panel buttons round */ {
 [class^=uploadDropModal_] strong, /* file drag upload */
 [class^=channelNameSpan_] /* inbox */
  { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
+
+/*discord loading page*/
+.container__827e6.fixClipping__84826{
+    background: 0 0;
+    backdrop-filter: blur(5px);
+}
