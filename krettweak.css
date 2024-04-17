@@ -9,6 +9,8 @@
 
 @import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css);
 @import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/MessageUltilities/TimestampBubbles/import.css);
+@import url("https://minidiscordthemes.github.io/Snippets/MinimalAuthApps/main.css");
+
 
 :root {
   --theme-h: 0;
@@ -414,3 +416,26 @@ button.button__4f306 /* make user panel buttons round */ {
 [class*="expressionPickerPositionLayer_"] [class*="soundboardContainer_"] [class*="picker_"] {
     height: 100%;
 }
+
+/* Change APP tag to BOT */
+span[class^=botTag] > span[class^=botText] {
+  display: none;
+}
+span[class^=botTag]::after {
+  content: "BOT";
+}
+
+/* Hide signups */
+[data-list-id="guildsnav"]>div>div>div:has(>div[style*="background: url(\"https://cdn.discordapp.com/assets/signups"]) {display:none}
+
+/* Custom Emoji Button */
+.sprite__294b3.spriteColored__9a869 {
+    background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
+    background-size: 24px;
+}
+
+.sprite__294b3.spriteGreyscale__750f4 {
+    mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
+    mask-size: 24px;
+}
+
