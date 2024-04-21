@@ -130,7 +130,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   --background-mentioned: var(--mention);
   --background-mentioned-hover: var(--mention-hover);
 }
-.mentioned__58017:before /* mention message left edge */ {
+.mentioned_fa6fd2:before /* mention message left edge */ {
   background: var(--accent-3) !important;
 }
 
