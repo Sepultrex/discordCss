@@ -8,9 +8,6 @@
 **/
 
 @import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css);
-@import url(https://raw.githubusercontent.com/SEELE1306/CSS-Snippets/main/MessageUltilities/TimestampBubbles/import.css);
-@import url("https://minidiscordthemes.github.io/Snippets/MinimalAuthApps/main.css");
-
 
 :root {
   --theme-h: 0;
@@ -425,9 +422,6 @@ span[class^=botTag]::after {
   content: "BOT";
 }
 
-/* Hide signups */
-[data-list-id="guildsnav"]>div>div>div:has(>div[style*="background: url(\"https://cdn.discordapp.com/assets/signups"]) {display:none}
-
 /* Custom Emoji Button */
 .sprite__294b3.spriteColored__9a869 {
     background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
@@ -439,3 +433,9 @@ span[class^=botTag]::after {
     mask-size: 24px;
 }
 
+/* Timestamps */
+@font-face {
+  font-family: "Blank Dot";
+  src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
+  unicode-range: U+2022;
+}
