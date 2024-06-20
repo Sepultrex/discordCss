@@ -42,6 +42,9 @@
   --mention: hsla(278, 80%, 52%, 0.08);
   /* color of mentions and messages that mention you when hovered */
   --mention-hover: hsla(278, 80%, 52%, 0.05);
+
+
+  --brand-experiment: hsl(278, 80%, 52%);
 }
 
 /* [[ QUOTES ]] */
@@ -85,15 +88,15 @@
                     ▀                  █ ▀    █      */
 
 /* replace ping/strikethrough red */
-.numberBadge__50328, /* dm unread number */
+.numberBadge_df8943 , /* dm unread number */
 .mention-3XBnnZ /* "NEW" serverlist indicator */ {
   background: var(--accent-2) !important;
 }
-.divider__8cf56  /* unread dividers */ {
+.divider_fc5f50  /* unread dividers */ {
   --divider-color: var(--accent-2);
 }
-/* .icons__10dd7   /* channel mute button strikethrough */
-.icon__1e4c2 /* mute button strikethrough */ {
+/* .icons__10dd7   /* vc channel mute button strikethrough */
+.icon_cdc675 /* mute button strikethrough */ {
   color: var(--accent-2) !important;
 }
 path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
@@ -127,7 +130,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   --background-mentioned: var(--mention);
   --background-mentioned-hover: var(--mention-hover);
 }
-.mentioned_fa6fd2:before /* mention message left edge */ {
+.mentioned_d5deea:before /* mention message left edge */ {
   background: var(--accent-3) !important;
 }
 
@@ -177,7 +180,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* hammin */
-[class^="panels__58331"]::before {
+[class^="panels_a4d4d9"]::before {
   content: "";
   width: 34px;
   height: 34px;
@@ -187,11 +190,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   background-image: url("https://cdn.discordapp.com/emojis/1055070511450828861.gif?size=96&quality=lossless");
 }
 
-/* bottom left size */
-/* You might wanna remove this if your monitor is big */
-.container_ca50b9 {
-  height: 39px;
-}
+
 
 /* Rounded Context Menu */
 .menu_dc52c6,
@@ -200,15 +199,15 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* edited text */
-.timestamp_c79dd2:not(.timestampInline__430cf) time::after {
+.timestamp_ec86aa:not(.timestampInline_ec86aa) time::after {
   content: " (" attr(aria-label) ")";
 }
-.edited_b20dd9:not(.message-translate-indicator) {
+.edited_ec86aa:not(.message-translate-indicator) {
   display: none;
 }
 
 /* Fav gif icon */
-.imageAccessory__9614b {
+.imageAccessory_d4597d {
   left: unset;
   right: 6px;
 }
@@ -258,14 +257,14 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* show the url masked links take you to in the message */
-.anchor_c8ddc0[title$=")"]::after {
+.anchor_af404b[title$=")"]::after {
   font-size: 0.7rem;
   content: " (" attr(href) ")";
   filter: grayscale(0.4);
 }
 
 /* Make jump to present/jump to original/mark as read bars smaller and hug the right */
-.barBase__4e0ba {
+.barBase_cf58b5 {
   width: fit-content;
   margin-left: auto;
 }
@@ -323,42 +322,9 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   font-size: 14px;
 }
 
-/* channel/settings/dms/member list hover animations */
-.wrapper__7bcde .link__95dc0 /* channels */,
-.container__4f20e /* members */,
-.channel_c21703 /* dms */,
-.side_b4b3f6 .item__48dda /* settings */ {
-  transition: margin-left 0.2s ease;
-}
-.wrapper__7bcde:hover .link__95dc0,
-.side_b4b3f6 .item__48dda:hover {
-  margin-left: 10px;
-}
-.container__4f20e:hover,
-.channel_c21703:hover {
-  margin-left: 18px;
-}
-
 /* Hide invite to server box from channel list */
-.iconItem__8e3b8[aria-label="Create Invite"] svg{
+.iconItem_f6f816[aria-label="Create Invite"] svg{
   display:none;
-}
-
-/* some more silly hover animations */
-button.button__4f306 /* make user panel buttons round */ {
-    border-radius: 50%;
-}
-.button__4f306[aria-label="User Settings"] /* settings button */, 
-.attachButton_b1db83 .attachButtonInner__3ce2b /* upload button */,
-.emojiButton__30ec7 .contents_fb6220 /* emoji button */,
-.closeButton__34341 /* settings exit button */ {
-    transition: transform 1s ease;
-}
-.button__4f306[aria-label="User Settings"]:hover,
-.attachButton_b1db83:hover .attachButtonInner__3ce2b,
-.emojiButton__30ec7:hover .contents_fb6220,
-.closeButton__34341:hover {
-    transform: rotate(360deg);
 }
 
 /* Improved dashless channelnames with added selectors, with flag emoji support for platforms that lack them */
@@ -423,12 +389,12 @@ span[class^=botTag]::after {
 }
 
 /* Custom Emoji Button */
-.sprite__294b3.spriteColored__9a869 {
+.sprite_af14ca.spriteColored_af14ca  {
     background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
     background-size: 24px;
 }
 
-.sprite__294b3.spriteGreyscale__750f4 {
+.sprite_af14ca.spriteGreyscale_af14ca {
     mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
     mask-size: 24px;
 }
@@ -439,4 +405,3 @@ span[class^=botTag]::after {
   src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
   unicode-range: U+2022;
 }
-
