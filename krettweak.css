@@ -8,6 +8,7 @@
 **/
 
 @import url(https://raw.githubusercontent.com/Blisterexe/shiggy-loader/main/main.css);
+@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);
 
 :root {
   --theme-h: 0;
@@ -405,3 +406,4 @@ span[class^=botTag]::after {
   src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
   unicode-range: U+2022;
 }
+
