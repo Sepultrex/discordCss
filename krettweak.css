@@ -133,9 +133,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   --green-530: var(--accent-5); /* green button click */
   --text-positive: var(--accent-1);
 }
-.wrapper_edb6e0 rect[fill="#23a55a"]  /* replace green online circles */ {
-  fill: var(--accent-2) !important;
-}
+
 
 /* Add danger colours to dangerous user actions */
 #user-context-close-dm, #user-context-remove-friend, #user-context-block { color: var(--accent-2) }
@@ -178,7 +176,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* Rounded Context Menu */
-.menu_dc52c6,
+.menu_d90b3d,
 .colorDefault__0b482 {
   border-radius: 15px;
 }
@@ -222,9 +220,9 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 [aria-label*='Send a gift'],
 #channel-attach-SLASH_COMMAND,
 /* Removes Chatbox from channel that don't allow you to communicate */
-.channelTextAreaDisabled_c43b1c,
+.channelTextAreaDisabled_d0696b,
 /* Removes Follow banner on bottom of channels */
-.wrapper_fbbb73 {
+.wrapper_faf5ab {
   display: none;
 }
 
@@ -232,14 +230,9 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 [id="message-copy-text"],
 [id="message-apps"],
 [id="message-thread"],
-[id="message-report"] {
-  display: none;
-}
-
+[id="message-report"] {display: none;}
 [href="/store"],
-[href="/shop"] {
-  display: none;
-}
+[href="/shop"] {display: none;}
 
 /* show the url masked links take you to in the message */
 .anchor_af404b[title$=")"]::after {
@@ -254,14 +247,13 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   margin-left: auto;
 }
 /* End make jump to present/jump to original/mark as read bars smaller and hug the right */
-
 [class^="form-"]:before,
 [class^="children-"]:after {
   display: none;
 }
 
 /* set channel status */
-.linkBottom_bac113 {
+.linkBottom_d8bfb3 {
   display: none;
 }
 
@@ -346,7 +338,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /*discord loading page*/
-.container__827e6.fixClipping__84826 {
+.container_e40c16.fixClipping_c7e9c6  {
   background: 0 0;
   backdrop-filter: blur(5px);
 }
@@ -385,19 +377,12 @@ span[class^="botTag"]::after {
   background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
   background-size: 24px;
 }
-
 .sprite_af14ca.spriteGreyscale_af14ca {
   mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
   mask-size: 24px;
 }
 
-/* Timestamps */
-@font-face {
-  font-family: "Blank Dot";
-  src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
-  unicode-range: U+2022;
-}
-
+/* context menu hover color */
 .colorDefault_d90b3d.focused_d90b3d {
   background-color: var(--accent-5);
 }
