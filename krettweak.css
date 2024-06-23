@@ -36,6 +36,7 @@
   --mention-hover: hsla(278, 80%, 52%, 0.05);
 
   --brand-experiment: hsl(278, 80%, 52%);
+  --status-danger: var(--accent-2) ; 
 }
 
 /*        ▄██████████████████████████████████████████ 
@@ -137,22 +138,18 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
 }
 
 /* Add danger colours to dangerous user actions */
-#user-context-close-dm,
-#user-context-remove-friend,
-#user-context-block {
-  color: var(--status-danger);
+#user-context-close-dm, #user-context-remove-friend, #user-context-block { color: var(--accent-2) }
+#user-context-close-dm:active, #user-context-remove-friend:active, #user-context-block:active {
+    background-color: var(--accent-5)!important;
+    color: var(--white-500)!important;    
 }
-#user-context-close-dm:active,
-#user-context-remove-friend:active,
-#user-context-block:active {
-  background-color: var(--red-500) !important;
-  color: var(--white-500) !important;
+#user-context-close-dm[class*="focused_"], #user-context-remove-friend[class*="focused_"], #user-context-block[class*="focused_"] {
+    background-color: var(--accent-5);
+    color: var(--white-500);   
 }
-#user-context-close-dm[class*="focused-"],
-#user-context-remove-friend[class*="focused-"],
-#user-context-block[class*="focused-"] {
-  background-color: var(--button-danger-background);
-  color: var(--white-500);
+/* kick ban timeout  ^^^ */
+.colorDanger_d90b3d {
+  color: var(--accent-2);
 }
 
 div[class*="listItem"]:has(div[aria-label="Download Apps"]),
@@ -399,4 +396,8 @@ span[class^="botTag"]::after {
   font-family: "Blank Dot";
   src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
   unicode-range: U+2022;
+}
+
+.colorDefault_d90b3d.focused_d90b3d {
+  background-color: var(--accent-5);
 }
