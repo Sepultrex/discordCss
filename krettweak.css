@@ -35,25 +35,7 @@
   /* color of mentions and messages that mention you when hovered */
   --mention-hover: hsla(278, 80%, 52%, 0.05);
 
-
   --brand-experiment: hsl(278, 80%, 52%);
-}
-
-/* [[ QUOTES ]] */
-[class*="markup_"] blockquote {
-  padding: 4px 10px;
-  background: color-mix(srgb, var(--brand-experiment) 25%, transparent);
-  border-radius: 0 4px 4px 0;
-}
-.theme-dark[class*="markup_"] blockquote {
-  color: var(--brand-experiment);
-  background: var(--brand-experiment);
-}
-.theme-light[class*="markup_"] blockquote {
-  color: var(--brand-experiment);
-}
-[class*="blockquoteDivider_"] {
-  background: var(--brand-experiment);
 }
 
 /*        ▄██████████████████████████████████████████ 
@@ -79,6 +61,23 @@
                     █                 ██ █▀  █       
                     ▀                  █ ▀    █      */
 
+/* [[ QUOTES ]] */
+[class*="markup_"] blockquote {
+  padding: 4px 10px;
+  background: color-mix(srgb, var(--brand-experiment) 25%, transparent);
+  border-radius: 0 4px 4px 0;
+}
+.theme-dark[class*="markup_"] blockquote {
+  color: var(--brand-experiment);
+  background: var(--brand-experiment);
+}
+.theme-light[class*="markup_"] blockquote {
+  color: var(--brand-experiment);
+}
+[class*="blockquoteDivider_"] {
+  background: var(--brand-experiment);
+}
+
 /* replace ping/strikethrough red */
 .numberBadge_df8943 , /* dm unread number */
 .mention-3XBnnZ /* "NEW" serverlist indicator */ {
@@ -98,7 +97,6 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
 .expandedFolderIconWrapper__458cf svg /* folder icons */ {
   color: var(--accent-2) !important;
 }
-
 
 .theme-dark {
   --blue-345: var(--accent-1); /* links */
@@ -181,8 +179,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   position: absolute;
   background-image: url("https://cdn.discordapp.com/emojis/1055070511450828861.gif?size=96&quality=lossless");
 }
-
-
 
 /* Rounded Context Menu */
 .menu_dc52c6,
@@ -315,20 +311,24 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* Hide invite to server box from channel list */
-.iconItem_f6f816[aria-label="Create Invite"] svg{
-  display:none;
+.iconItem_f6f816[aria-label="Create Invite"] svg {
+  display: none;
 }
 
 /* Improved dashless channelnames with added selectors, with flag emoji support for platforms that lack them */
-@font-face
- { font-family: "Twemoji Mozilla";
-   src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
-   unicode-range: U+1F1E6-1F1FF; }
-@font-face
- { font-family: "dashless";
-   size-adjust: 100%; /*adjust this to change word spacing*/
-   src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
-   unicode-range: U+002D; }
+@font-face {
+  font-family: "Twemoji Mozilla";
+  src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf")
+    format("truetype");
+  unicode-range: U+1F1E6-1F1FF;
+}
+@font-face {
+  font-family: "dashless";
+  size-adjust: 100%; /*adjust this to change word spacing*/
+  src: url("https://vendicated.github.io/random-files/Dashless.woff2")
+    format("woff2");
+  unicode-range: U+002D;
+}
 [data-list-item-id^=channels___]:not([role=button]), /* channel list */
 [class^=titleWrapper] > h1, /* top bar with topic */
 [class^=titleWrapper] > h2, /* top bar in thread view */
@@ -344,51 +344,54 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 .vc-permviewer-perms-title, /* permissionsviewer */
 [class^=headerChannelContainer_] > div, /* invite to channel dialog */
 [class^=uploadDropModal_] strong, /* file drag upload */
-[class^=channelNameSpan_] /* inbox */
- { font-family: "Twemoji Mozilla", "dashless", var(--font-primary); }
+[class^=channelNameSpan_] /* inbox */ {
+  font-family: "Twemoji Mozilla", "dashless", var(--font-primary);
+}
 
 /*discord loading page*/
-.container__827e6.fixClipping__84826{
-    background: 0 0;
-    backdrop-filter: blur(5px);
+.container__827e6.fixClipping__84826 {
+  background: 0 0;
+  backdrop-filter: blur(5px);
 }
 
 /* Automatically resizing gif picker */
 :root {
-    /* Change me! */
-    --expression-picker-aspect-ratio: 1.125 / 1;
+  /* Change me! */
+  --expression-picker-aspect-ratio: 1.125 / 1;
 }
 [class*="expressionPickerPositionLayer_"] [class*="positionContainer_"] {
-    height: calc(100vh - 128px);
+  height: calc(100vh - 128px);
 }
 [class*="expressionPickerPositionLayer_"] [class*="drawerSizingWrapper_"] {
-    max-height: 100%;
-    bottom: 0px;
-    height: auto;
-    aspect-ratio: var(--expression-picker-aspect-ratio);
+  max-height: 100%;
+  bottom: 0px;
+  height: auto;
+  aspect-ratio: var(--expression-picker-aspect-ratio);
 }
 /* Fixes soundmoji picker which has a hardcoded height */
-[class*="expressionPickerPositionLayer_"] [class*="soundboardContainer_"] [class*="picker_"] {
-    height: 100%;
+[class*="expressionPickerPositionLayer_"]
+  [class*="soundboardContainer_"]
+  [class*="picker_"] {
+  height: 100%;
 }
 
 /* Change APP tag to BOT */
-span[class^=botTag] > span[class^=botText] {
+span[class^="botTag"] > span[class^="botText"] {
   display: none;
 }
-span[class^=botTag]::after {
+span[class^="botTag"]::after {
   content: "BOT";
 }
 
 /* Custom Emoji Button */
-.sprite_af14ca.spriteColored_af14ca  {
-    background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
-    background-size: 24px;
+.sprite_af14ca.spriteColored_af14ca {
+  background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
+  background-size: 24px;
 }
 
 .sprite_af14ca.spriteGreyscale_af14ca {
-    mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
-    mask-size: 24px;
+  mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
+  mask-size: 24px;
 }
 
 /* Timestamps */
@@ -397,4 +400,3 @@ span[class^=botTag]::after {
   src: url("https://raw.githubusercontent.com/adobe-fonts/adobe-blank/master/AdobeBlank.ttf.woff");
   unicode-range: U+2022;
 }
-
