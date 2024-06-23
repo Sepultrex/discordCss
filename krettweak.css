@@ -134,7 +134,6 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   --text-positive: var(--accent-1);
 }
 
-
 /* Add danger colours to dangerous user actions */
 #user-context-close-dm, #user-context-remove-friend, #user-context-block { color: var(--accent-2) }
 #user-context-close-dm:active, #user-context-remove-friend:active, #user-context-block:active {
@@ -145,6 +144,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
     background-color: var(--accent-5);
     color: var(--white-500);   
 }
+
 /* kick ban timeout  ^^^ */
 .colorDanger_d90b3d {
   color: var(--accent-2);
