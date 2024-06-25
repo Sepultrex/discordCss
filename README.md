@@ -1,9 +1,11 @@
 <h2 align="center">Discord css file</h2>
 
-Just add this link on top of your customcss 
+Add this link on top of your customcss 
+
+You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons]([https://www.python.org](https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css))
+
 ```
 @import url("https://raw.githubusercontent.com/kretcee/discordCss/main/krettweak.css");
 ```
-Just updating my old css fixes to here
 
 - Dont use Betterdiscord!
