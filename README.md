@@ -12,4 +12,4 @@ You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons](https:/
 
 
 # Preview
-![1](https://github.com/kretcee/discordCss/assets/58228910/9a41a626-748f-4a3e-954d-a37f400c5a53)
+![1](https://github.com/ceeprus/discordCss/assets/58228910/9a41a626-748f-4a3e-954d-a37f400c5a53)
