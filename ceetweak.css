@@ -1,5 +1,6 @@
 @import url(https://raw.githubusercontent.com/ceeprus/shiggy-loader/patch-1/main.css);
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);
+@import url("https://minidiscordthemes.github.io/Snippets/ClippyStatus/main.css");
 
 :root {
   --theme-h: 0;
@@ -159,9 +160,8 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   display: none;
 }
 
-/* show full about me */
-[style="-webkit-line-clamp: 6;"] {
-  -webkit-line-clamp: 10000000 !important;
+[class^=userPopoutInner_] [class^=blockquoteContainer_] {
+  max-height: 90px;
 }
 
 /* hammin */
