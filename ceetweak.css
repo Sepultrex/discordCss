@@ -218,6 +218,8 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 /* Text Bar */
 [aria-label*='Open sticker picker'],
 [aria-label*='Send a gift'],
+
+
 #channel-attach-SLASH_COMMAND,
 /* Removes Chatbox from channel that don't allow you to communicate */
 .channelTextAreaDisabled_d0696b,
@@ -232,6 +234,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 [id="message-thread"],
 [id="message-report"] {display: none;}
 [href="/store"],
+[aria-label*='Share Nitro with Friends'],
 [href="/shop"] {display: none;}
 
 /* show the url masked links take you to in the message */
@@ -386,3 +389,4 @@ span[class^="botTag"]::after {
 .colorDefault_d90b3d.focused_d90b3d {
   background-color: var(--accent-5);
 }
+
