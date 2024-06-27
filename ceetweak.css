@@ -82,22 +82,18 @@
 
 /* replace ping/strikethrough red */
 .numberBadge_df8943 , /* dm unread number */
-.mention-3XBnnZ /* "NEW" serverlist indicator */ {
+.mention_c10249 /* "NEW" serverlist indicator */ {
   background: var(--accent-2) !important;
 }
 .divider_fc5f50  /* unread dividers */ {
   --divider-color: var(--accent-2);
 }
-/* .icons__10dd7   /* vc channel mute button strikethrough */
+/* .icons_cdc675   /* vc channel mute button strikethrough */
 .icon_cdc675 /* mute button strikethrough */ {
   color: var(--accent-2) !important;
 }
 path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   fill: var(--accent-2) !important;
-}
-/* replace blurple */
-.expandedFolderIconWrapper__458cf svg /* folder icons */ {
-  color: var(--accent-2) !important;
 }
 
 .theme-dark {
@@ -113,7 +109,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   --background-message-highlight: var(--mention);
   --background-message-highlight-hover: var(--mention-hover);
 }
-.container__871ba.checked__6bdb0 /* settings checkbuttons */ {
+.container_cebd1c.checked_cebd1c /* settings checkbuttons */ {
   background: var(--accent-3) !important;
 }
 
@@ -152,7 +148,7 @@ path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
 }
 
 div[class*="listItem"]:has(div[aria-label="Download Apps"]),
-.guildSeparator_dcb3cc {
+.guildSeparator_d0c57e {
   display: none;
 }
 
@@ -177,7 +173,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 
 /* Rounded Context Menu */
 .menu_d90b3d,
-.colorDefault__0b482 {
+.colorDefault_d90b3d {
   border-radius: 15px;
 }
 
@@ -265,21 +261,21 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   display: none;
 }
 /* Hide show all voice channels button */
-.voiceChannelsButton__46c37 {
+.voiceChannelsButton_a08117 {
   display: none;
 }
 
 /* channels and roles tab */
-.container__10dc7,
-.header__60bef,
-.scrollerContainer_bf5dbd .container__7590f,
-.theme-dark .scrollerContainer_bf5dbd,
-.theme-dark .emptyPage__3e15d,
-.theme-dark .container__7590f {
+.container_f1fd9c,
+.header_f1fd9c,
+.scrollerContainer_c6b11b .container_c2efea,
+.theme-dark .scrollerContainer_c6b11b,
+.theme-dark .emptyPage_c6b11b,
+.theme-dark .container_c2efea {
   background-color: var(--home-background) !important;
 }
 /* remove the funny little gradient on ^ */
-.theme-dark .innerHeader_afca2f:after {
+.theme-dark .innerHeader_f1fd9c:after {
   display: none;
 }
 
