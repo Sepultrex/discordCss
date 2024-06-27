@@ -8,8 +8,7 @@ You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons](https:/
 @import url("https://raw.githubusercontent.com/ceeprus/discordCss/main/ceetweak.css");
 ```
 
-- Dont use Betterdiscord!
-
+- Dont use Betterdiscord! <img src="https://github.com/ceeprus/discordCss/blob/main/shiggy.gif?raw=true" width=4% height=4%>
 
 # Preview
 ![1](https://github.com/ceeprus/discordCss/assets/58228910/9a41a626-748f-4a3e-954d-a37f400c5a53)
