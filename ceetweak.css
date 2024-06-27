@@ -1,6 +1,4 @@
-@import url(https://raw.githubusercontent.com/ceeprus/shiggy-loader/patch-1/main.css);
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);
-@import url("https://minidiscordthemes.github.io/Snippets/ClippyStatus/main.css");
 
 :root {
   --theme-h: 0;
@@ -37,7 +35,7 @@
   --mention-hover: hsla(278, 80%, 52%, 0.05);
 
   --brand-experiment: hsl(278, 80%, 52%);
-  --status-danger: var(--accent-2);
+  --status-danger: var(--accent-2) ; 
 }
 
 /*        ▄██████████████████████████████████████████ 
@@ -63,78 +61,74 @@
                     █                 ██ █▀  █       
                     ▀                  █ ▀    █      */
 
+/* Shiggy loader */
+.container_e40c16.fixClipping_c7e9c6 > .content_e40c16 {
+  position: relative;
+}
+.container_e40c16.fixClipping_c7e9c6 > .content_e40c16 .ready_e40c16 {
+  display: none;
+}
+.container_e40c16.fixClipping_c7e9c6 > .content_e40c16 .ready_e40c16 + .text_e40c16 {
+  top: 50px;
+}
+.container_e40c16.fixClipping_c7e9c6 > .content_e40c16::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  background: url("https://github.com/ceeprus/discordCss/blob/main/shiggy.gif?raw=true") center/80% no-repeat !important;
+  image-rendering: pixelated;
+}
+
 /* [[ QUOTES ]] */
 [class*="markup_"] blockquote {
   padding: 4px 10px;
   background: color-mix(srgb, var(--brand-experiment) 25%, transparent);
   border-radius: 0 4px 4px 0;
 }
-
 .theme-dark[class*="markup_"] blockquote {
   color: var(--brand-experiment);
   background: var(--brand-experiment);
 }
-
 .theme-light[class*="markup_"] blockquote {
   color: var(--brand-experiment);
 }
-
 [class*="blockquoteDivider_"] {
   background: var(--brand-experiment);
 }
 
 /* replace ping/strikethrough red */
-.numberBadge_df8943,
-/* dm unread number */
-.mention_c10249
-
-/* "NEW" serverlist indicator */ {
+.numberBadge_df8943 , /* dm unread number */
+.mention_c10249 /* "NEW" serverlist indicator */ {
   background: var(--accent-2) !important;
 }
-
-.divider_fc5f50
-
-/* unread dividers */ {
+.divider_fc5f50  /* unread dividers */ {
   --divider-color: var(--accent-2);
 }
-
 /* .icons_cdc675   /* vc channel mute button strikethrough */
-.icon_cdc675
-
-/* mute button strikethrough */ {
+.icon_cdc675 /* mute button strikethrough */ {
   color: var(--accent-2) !important;
 }
-
-path[fill="var(--status-danger)"]
-
-/* vencord game activity strikethrough */ {
+path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
   fill: var(--accent-2) !important;
 }
 
 .theme-dark {
-  --blue-345: var(--accent-1);
-  /* links */
-  --brand-260: var(--accent-2);
-  /* "NEW" channel list indicator */
-  --brand-360: var(--accent-2);
-  /* bot labels, dm button, spotify progressbar */
-  --brand-430: var(--accent-4);
-  /* send button hover */
-  --brand-500: var(--accent-3);
-  /* buttons */
-  --brand-560: var(--accent-4);
-  /* button hovered */
-  --brand-600: var(--accent-5);
-  /* button pressed */
+  --blue-345: var(--accent-1); /* links */
+  --brand-260: var(--accent-2); /* "NEW" channel list indicator */
+  --brand-360: var(--accent-2); /* bot labels, dm button, spotify progressbar */
+  --brand-430: var(--accent-4); /* send button hover */
+  --brand-500: var(--accent-3); /* buttons */
+  --brand-560: var(--accent-4); /* button hovered */
+  --brand-600: var(--accent-5); /* button pressed */
   --mention-background: var(--mention);
   --mention-foreground: var(--accent-2);
   --background-message-highlight: var(--mention);
   --background-message-highlight-hover: var(--mention-hover);
 }
-
-.container_cebd1c.checked_cebd1c
-
-/* settings checkbuttons */ {
+.container_cebd1c.checked_cebd1c /* settings checkbuttons */ {
   background: var(--accent-3) !important;
 }
 
@@ -143,45 +137,28 @@ path[fill="var(--status-danger)"]
   --background-mentioned: var(--mention);
   --background-mentioned-hover: var(--mention-hover);
 }
-
-.mentioned_d5deea:before
-
-/* mention message left edge */ {
+.mentioned_d5deea:before /* mention message left edge */ {
   background: var(--accent-3) !important;
 }
 
 /* replace green */
 .theme-dark {
-  --green-360: var(--accent-2);
-  /* replace other green stuff */
-  --green-430: var(--accent-3);
-  /* green buttons (like invite) */
-  --green-500: var(--accent-4);
-  /* green button hover */
-  --green-530: var(--accent-5);
-  /* green button click */
+  --green-360: var(--accent-2); /* replace other green stuff */
+  --green-430: var(--accent-3); /* green buttons (like invite) */
+  --green-500: var(--accent-4); /* green button hover */
+  --green-530: var(--accent-5); /* green button click */
   --text-positive: var(--accent-1);
 }
 
 /* Add danger colours to dangerous user actions */
-#user-context-close-dm,
-#user-context-remove-friend,
-#user-context-block {
-  color: var(--accent-2);
+#user-context-close-dm, #user-context-remove-friend, #user-context-block { color: var(--accent-2) }
+#user-context-close-dm:active, #user-context-remove-friend:active, #user-context-block:active {
+    background-color: var(--accent-5)!important;
+    color: var(--white-500)!important;    
 }
-
-#user-context-close-dm:active,
-#user-context-remove-friend:active,
-#user-context-block:active {
-  background-color: var(--accent-5) !important;
-  color: var(--white-500) !important;
-}
-
-#user-context-close-dm[class*="focused_"],
-#user-context-remove-friend[class*="focused_"],
-#user-context-block[class*="focused_"] {
-  background-color: var(--accent-5);
-  color: var(--white-500);
+#user-context-close-dm[class*="focused_"], #user-context-remove-friend[class*="focused_"], #user-context-block[class*="focused_"] {
+    background-color: var(--accent-5);
+    color: var(--white-500);   
 }
 
 /* kick ban timeout  ^^^ */
@@ -198,7 +175,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   display: none;
 }
 
-[class^="userPopoutInner_"] [class^="blockquoteContainer_"] {
+[class^=userPopoutInner_] [class^=blockquoteContainer_] {
   max-height: 90px;
 }
 
@@ -223,7 +200,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 .timestamp_ec86aa:not(.timestampInline_ec86aa) time::after {
   content: " (" attr(aria-label) ")";
 }
-
 .edited_ec86aa:not(.message-translate-indicator) {
   display: none;
 }
@@ -270,15 +246,10 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 [id="message-copy-text"],
 [id="message-apps"],
 [id="message-thread"],
-[id="message-report"] {
-  display: none;
-}
-
+[id="message-report"] {display: none;}
 [href="/store"],
-[aria-label*="Share Nitro with Friends"],
-[href="/shop"] {
-  display: none;
-}
+[aria-label*='Share Nitro with Friends'],
+[href="/shop"] {display: none;}
 
 /* show the url masked links take you to in the message */
 .anchor_af404b[title$=")"]::after {
@@ -292,7 +263,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   width: fit-content;
   margin-left: auto;
 }
-
 /* End make jump to present/jump to original/mark as read bars smaller and hug the right */
 [class^="form-"]:before,
 [class^="children-"]:after {
@@ -308,7 +278,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 [class^="bar__"]:has([class^="voiceChannelsIcon__"]) {
   display: none;
 }
-
 /* Hide show all voice channels button */
 .voiceChannelsButton_a08117 {
   display: none;
@@ -323,7 +292,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 .theme-dark .container_c2efea {
   background-color: var(--home-background) !important;
 }
-
 /* remove the funny little gradient on ^ */
 .theme-dark .innerHeader_f1fd9c:after {
   display: none;
@@ -333,17 +301,14 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 #experiments-tab [class^="description_"] {
   overflow: hidden;
 }
-
 #experiments-tab [class^="description_"] div:first-of-type {
   float: left;
 }
-
 #experiments-tab [class^="description_"] div + div {
   font-size: 0;
   line-height: 0;
   float: right;
 }
-
 #experiments-tab [class^="description_"] div + div:after {
   filter: grayscale();
   content: "⚠ No server configuration";
@@ -363,55 +328,34 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
     format("truetype");
   unicode-range: U+1F1E6-1F1FF;
 }
-
 @font-face {
   font-family: "dashless";
-  size-adjust: 100%;
-  /*adjust this to change word spacing*/
+  size-adjust: 100%; /*adjust this to change word spacing*/
   src: url("https://vendicated.github.io/random-files/Dashless.woff2")
     format("woff2");
   unicode-range: U+002D;
 }
-
-[data-list-item-id^=channels___]:not([role=button]),
-/* channel list */
-[class^=titleWrapper]>h1,
-/* top bar with topic */
-[class^=titleWrapper]>h2,
-/* top bar in thread view */
-[id^=":r"]>h1,
-/* topic popup */
-[class^=resultChannel],
-[class^=channelNameContainer_],
-[class^=searchAnswer_],
-/* search */
-.channelWithIcon,
-/* channel mentions in chat */
-[class^=emptyChannelIcon_]+h3,
-/* start of new channel */
-[class^=emptyChannelIcon_]~[class*=description_],
-[class^=browser_] [class*=channelText_],
-/* channel browser*/
-[class^=returnButton_] [class^=text-],
-/*return button in channel browser*/
-[class^=placeholder][class*=slateTextArea],
-/* chat input placeholder text */
-[class^=auditLog_] [class^=overflowEllipsis_] strong,
-/* audit log */
-.vc-permviewer-perms-title,
-/* permissionsviewer */
-[class^=headerChannelContainer_]>div,
-/* invite to channel dialog */
-[class^=uploadDropModal_] strong,
-/* file drag upload */
-[class^=channelNameSpan_]
-
-/* inbox */ {
+[data-list-item-id^=channels___]:not([role=button]), /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=titleWrapper] > h2, /* top bar in thread view */
+[id^=":r"] > h1, /* topic popup */
+[class^=resultChannel], [class^=channelNameContainer_], [class^=searchAnswer_], /* search */
+.channelWithIcon, /* channel mentions in chat */
+[class^=emptyChannelIcon_] + h3, /* start of new channel */
+[class^=emptyChannelIcon_] ~ [class*=description_],
+[class^=browser_] [class*=channelText_], /* channel browser*/
+[class^=returnButton_] [class^=text-], /*return button in channel browser*/
+[class^=placeholder][class*=slateTextArea], /* chat input placeholder text */
+[class^=auditLog_] [class^=overflowEllipsis_] strong, /* audit log */
+.vc-permviewer-perms-title, /* permissionsviewer */
+[class^=headerChannelContainer_] > div, /* invite to channel dialog */
+[class^=uploadDropModal_] strong, /* file drag upload */
+[class^=channelNameSpan_] /* inbox */ {
   font-family: "Twemoji Mozilla", "dashless", var(--font-primary);
 }
 
 /*discord loading page*/
-.container_e40c16.fixClipping_c7e9c6 {
+.container_e40c16.fixClipping_c7e9c6  {
   background: 0 0;
   backdrop-filter: blur(5px);
 }
@@ -421,18 +365,15 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   /* Change me! */
   --expression-picker-aspect-ratio: 1.125 / 1;
 }
-
 [class*="expressionPickerPositionLayer_"] [class*="positionContainer_"] {
   height: calc(100vh - 128px);
 }
-
 [class*="expressionPickerPositionLayer_"] [class*="drawerSizingWrapper_"] {
   max-height: 100%;
   bottom: 0px;
   height: auto;
   aspect-ratio: var(--expression-picker-aspect-ratio);
 }
-
 /* Fixes soundmoji picker which has a hardcoded height */
 [class*="expressionPickerPositionLayer_"]
   [class*="soundboardContainer_"]
@@ -444,7 +385,6 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 span[class^="botTag"] > span[class^="botText"] {
   display: none;
 }
-
 span[class^="botTag"]::after {
   content: "BOT";
 }
@@ -454,7 +394,6 @@ span[class^="botTag"]::after {
   background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
   background-size: 24px;
 }
-
 .sprite_af14ca.spriteGreyscale_af14ca {
   mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
   mask-size: 24px;
@@ -466,14 +405,15 @@ span[class^="botTag"]::after {
 }
 
 /* no line clamp on new profiles */
-[class*="descriptionClamp"] {
+[class*=descriptionClamp] {
   -webkit-line-clamp: 9999999;
 }
-
-[class*="viewFullBio"] {
+[class*=viewFullBio] {
   display: none;
 }
+
 
 separator_d90b3d + #user-context-roles {
   display: none;
 }
+
