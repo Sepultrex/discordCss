@@ -412,8 +412,11 @@ span[class^="botTag"]::after {
   display: none;
 }
 
-
+/* Why would I want to add you or know I'm your friend? */
 separator_d90b3d + #user-context-roles {
   display: none;
 }
 
+[class*="biteSize_"] :is([aria-label="Add Friend"], [aria-label="Friends"]) {
+    display: none;
+}
