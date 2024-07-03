@@ -407,6 +407,7 @@ span[class^="botTag"]::after {
 /* no line clamp on new profiles */
 [class*=descriptionClamp] {
   -webkit-line-clamp: 9999999;
+  max-height: unset; 
 }
 [class*=viewFullBio] {
   display: none;
