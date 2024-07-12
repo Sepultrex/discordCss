@@ -417,3 +417,7 @@ span[class^="botTag"]::after {
 [class*="biteSize_"] :is([aria-label="Friends"]) {
     display: none;
 }
+
+.wrapper_b9619e {
+    display: none;
+}
