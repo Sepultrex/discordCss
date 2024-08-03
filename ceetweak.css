@@ -232,6 +232,7 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 /* Text Bar */
 [aria-label*='Open sticker picker'],
 [aria-label*='Send a gift'],
+[aria-label*='Apps'],
 
 
 #channel-attach-SLASH_COMMAND,
@@ -418,6 +419,7 @@ span[class^="botTag"]::after {
     display: none;
 }
 
+/* no more ads in voice channels */
 .wrapper_b9619e {
     display: none;
 }
