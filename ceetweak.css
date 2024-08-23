@@ -101,14 +101,14 @@
 
 /* replace ping/strikethrough red */
 .numberBadge_df8943 , /* dm unread number */
-.mention_c10249 /* "NEW" serverlist indicator */ {
+.mention_edf32f /* "NEW" serverlist indicator */ {
   background: var(--accent-2) !important;
 }
-.divider_fc5f50  /* unread dividers */ {
+.divider_c2654d  /* unread dividers */ {
   --divider-color: var(--accent-2);
 }
-/* .icons_cdc675   /* vc channel mute button strikethrough */
-.icon_cdc675 /* mute button strikethrough */ {
+/* .icons_d80634   /* vc channel mute button strikethrough */
+.icon_d80634 /* mute button strikethrough */ {
   color: var(--accent-2) !important;
 }
 path[fill="var(--status-danger)"] /* vencord game activity strikethrough */ {
@@ -197,10 +197,10 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
 }
 
 /* edited text */
-.timestamp_ec86aa:not(.timestampInline_ec86aa) time::after {
+.timestamp_f9f2ca:not(.timestampInline_f9f2ca) time::after {
   content: " (" attr(aria-label) ")";
 }
-.edited_ec86aa:not(.message-translate-indicator) {
+.edited_f9f2ca:not(.message-translate-indicator) {
   display: none;
 }
 
@@ -392,11 +392,11 @@ span[class^="botTag"]::after {
 }
 
 /* Custom Emoji Button */
-.sprite_af14ca.spriteColored_af14ca {
+.sprite_d91a75.spriteColored_d91a75 {
   background-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=128&quality=lossless);
   background-size: 24px;
 }
-.sprite_af14ca.spriteGreyscale_af14ca {
+.sprite_d91a75.spriteGreyscale_d91a75 {
   mask-image: url(https://cdn.discordapp.com/emojis/1024751291504791654.png?size=128&quality=lossless);
   mask-size: 24px;
 }
