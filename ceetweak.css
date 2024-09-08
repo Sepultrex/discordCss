@@ -236,6 +236,12 @@ div[class*="listItem"]:has(div[aria-label="Explore Discoverable Servers"]) {
   display: none;
 }
 
+/* image hover */
+[aria-label*='Edit Image with Apps']{
+  display: none;
+}
+
+
 #channel-attach-SLASH_COMMAND,
 /* Removes Chatbox from channel that don't allow you to communicate */
 .channelTextAreaDisabled_d0696b,
