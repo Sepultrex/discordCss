@@ -5,7 +5,7 @@ Add this link on top of your customcss
 You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons](https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css)
 
 ```
-@import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/ceetweak.css");
+@import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/snptweak.css");
 ```
 
 - Dont use Betterdiscord!
