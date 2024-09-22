@@ -11,7 +11,7 @@ You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons](https:/
 - Dont use Betterdiscord!
 
 # Preview
-![1](https://github.com/ceeprus/discordCss/assets/58228910/9a41a626-748f-4a3e-954d-a37f400c5a53)
+![Ekran görüntüsü 2024-09-23 011914 kopya](https://github.com/user-attachments/assets/3f5c1a3f-79d0-4c59-805c-ebb173a29b78)
 
 # What's New?
 
