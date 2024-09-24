@@ -243,8 +243,8 @@ img[role="presentation"] {
 .wrapper_a24e84,
 .button_f7e168[aria-label="Mark Unread"],
 .button_f7e168[aria-label="View Raw (Left Click) / Copy Raw (Right Click)"],
-/* sunucu klasörlerini gizle
-.wrapper_bc7085*/
+/* sunucu klasörlerini gizle*/
+.wrapper_bc7085
 {
     display: none;
 }
