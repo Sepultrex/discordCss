@@ -49,47 +49,46 @@
 /* font*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
 
-  --corner-text: 'Sinop (❁´◡`❁)';
-  --theme-h: 0;
-  --theme-s: 0%;
-  --theme-l: 5%;
-  --primary-500-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 9%);
-  --primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 5%);
-  --primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 2%);
-  --primary-600-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 1%);
-  --primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 3%);
-  --primary-645-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 4%);
-  --primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 6%);
-  --primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 8%);
-  --primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 10%);
-  --primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 12%);
-  --primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 14%);
-  --primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 16%);
-  --primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 18%);
-  --primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 20%);
+     --corner-text: 'Sinop (❁´◡`❁)';
+     --theme-h: 0;
+     --theme-s: 0%;
+     --theme-l: 5%;
+     --primary-500-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 9%);
+     --primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 5%);
+     --primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 2%);
+     --primary-600-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 1%);
+     --primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 3%);
+     --primary-645-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 4%);
+     --primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 6%);
+     --primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 8%);
+     --primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 10%);
+     --primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 12%);
+     --primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 14%);
+     --primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 16%);
+     --primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 18%);
+     --primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 20%);
 
-  /* color of links */
-  --accent-1: hsl(323, 41%, 46%);
-  /* color of unread dividers and some indicators */
-  --accent-2: hsl(323, 69%, 62%);
-  /* color of accented buttons */
-  --accent-3: hsl(323, 48%, 35%);
-  /* color of accented buttons when hovered */
-  --accent-4: hsl(323, 69%, 42%);
-  /* color of accented buttons when clicked */
-  --accent-5: hsl(323, 69%, 32%);
-  /* color of mentions and messages that mention you */
-  --mention: hsla(323, 69%, 72%, 0.08);
-  /* color of mentions and messages that mention you when hovered */
-  --mention-hover: hsla(323, 69%, 72%, 0.05);
+     /* color of links */
+     --accent-1: hsl(323, 41%, 46%);
+     /* color of unread dividers and some indicators */
+     --accent-2: hsl(323, 69%, 62%);
+     /* color of accented buttons */
+     --accent-3: hsl(323, 48%, 35%);
+     /* color of accented buttons when hovered */
+     --accent-4: hsl(323, 69%, 42%);
+     /* color of accented buttons when clicked */
+     --accent-5: hsl(323, 69%, 32%);
+     /* color of mentions and messages that mention you */
+     --mention: hsla(323, 69%, 72%, 0.08);
+     /* color of mentions and messages that mention you when hovered */
+     --mention-hover: hsla(323, 69%, 72%, 0.05);
 
-  --brand-experiment: hsl(323, 69%, 72%);
-  --status-danger: var(--accent-2);
+     --brand-experiment: hsl(323, 69%, 72%);
+    --status-danger: var(--accent-2);
 
 	/* thickness of messages divider */
 	--divider-thickness: 3px;
@@ -114,7 +113,7 @@
 	--bg-1: hsl(300, 7%, 33%); /* dark buttons when clicked */
 	--bg-2: hsl(335, 49%, 50%); /* dark buttons */
 	--bg-3: hsl(0, 0%, 0%); /* spacing, secondary elements */
-	--bg-4: hsl(0, 0%, 1%); /* main background color */
+	--bg-4: hsl(0, 0%, 2%); /* main background color */
 	--hover: hsla(311, 20%, 40%, 0.1); /* channels and buttons when hovered */
 	--active: hsla(300, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
 	--message-hover: hsla(300, 36%, 17%, 0.1); /* messages when hovered */
@@ -253,7 +252,7 @@ svg[aria-label="Server Owner"] {
   left: calc(50% - 100px);
   width: 200px;
   height: 200px;
-  background: url("https://i.ibb.co/jyNTkt6/e9e9bc4f350b984809f19ba230277800.gif?raw=true") center/80% no-repeat !important;
+  background: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-loading.gif") center/80% no-repeat !important;
   image-rendering: pixelated;
 }
 
@@ -265,7 +264,7 @@ svg[aria-label="Server Owner"] {
   left: 154px;
   margin-top: -54px;
   position: absolute;
-  background-image: url("https://cdn.discordapp.com/emojis/1281960377235804194.gif?size=96&quality=lossless");
+  background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/konata.gif");
 }
 
 /* bot isimleri fix*/
@@ -278,11 +277,11 @@ span[class^="botTag"]::after {
 
 /* Custom Emoji Button */
 .sprite_d91a75.spriteColored_d91a75 {
-  background-image: url(https://cdn.discordapp.com/emojis/1259892438928064623.gif?size=96&quality=lossless);
+  background-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button-clicked.png);
   background-size: 24px;
 }
 .sprite_d91a75.spriteGreyscale_d91a75 {
-  mask-image: url(https://cdn.discordapp.com/emojis/1219937235571572826.gif?size=96&quality=lossless);
+  mask-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button.gif);
   mask-size: 24px;
 }
 
@@ -300,7 +299,7 @@ div:not(:has(.videoWrapper_f8a4f3)) + .pictureInPicture_e0c856 * {
 
 /*silly vencord settings gif changer*/
 img[role="presentation"] {
-  content: url('https://cdn.discordapp.com/emojis/1278304862387441674.gif') !important;
+  content: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-idle.gif') !important;
   transform: rotate(0deg) !important;
 }
 
@@ -308,10 +307,10 @@ img[role="presentation"] {
     content: "";
     position: absolute;
     top: -50px;
-    right: 0;
+    right: 10px;
     width: 50px;
     height: 50px;
-    background-image: url('https://cdn.discordapp.com/emojis/1259892438928064623.gif');
+    background-image: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-peek.png');
     background-size: cover;
 }
 
@@ -346,6 +345,10 @@ img[role="presentation"] {
 #user-context-ban,
 #user-context-kick,
 #user-context-timeout,
+#message-reply,
+#message-pin,
+#message-edit,
+#message-copy-link,
 .separator_d90b3d,
 /* chatteki boş işleri kapama*/
 #message-mark-unread,
@@ -376,7 +379,6 @@ img[role="presentation"] {
 #app-mount .container_c2efea /* browse channels inner */,
 .chat_a7d72e.background_e85cee /* server guide body */,
 #app-mount .scrollerContainer_c6b11b /* channels and roles customize */,
-.shop_e77fa3 /* shop */,
 .wrapper_d880dc.minimum_d880dc /* private call */,
 .container_effbe2, .container__33507 /* emoji/sticker and gif picker searchbars */,
 #app-mount .uploadModal_f82cc7 /* upload modal */,
@@ -389,17 +391,10 @@ img[role="presentation"] {
 .userPanelOuter_c69a7b {
 	--background-secondary-alt: var(--bg-4) !important;
 }
-.mainCard_a6d69a /* forum post */,
 .navRow_be9398[data-theme=dark] /* add new account bottom */ {
 	background: var(--bg-3);
 }
-.folderIconWrapper_bc7085[style="background-color: rgba(88, 101, 242, 0.4);"] /* default color closed folders */ {
-	background: var(--bg-3) !important;
-}
-.folder_bc7085.hover_bc7085 /* folder opened on hover */, 
-#app-mount .outer_c0f6a6.interactive_c0f6a6:hover, #app-mount .outer_c0f6a6.active_c0f6a6 /* friend activity cards on hover */ {
-	background: var(--bg-2);
-}
+
 #app-mount .searchAnswer_b0fa94, /* search filter answer */
 #app-mount .searchFilter_b0fa94 /* search filter */ {
 	background: var(--bg-1);
@@ -1067,7 +1062,7 @@ button.button_f67531 /* make user panel buttons round */ {
 }
 .button_f67531:last-child:hover .contents_dd4f85,
 .attachButton_f298d4:hover .attachButtonInner_f298d4,
-.emojiButton_d0696b:hover .contents_dd4f85,
+.contents_dd4f85,
 .closeButton_df5532:hover,
 .contents_dd4f85:hover > .closeIcon_f9a4c9 {
 	transform: rotate(360deg);
