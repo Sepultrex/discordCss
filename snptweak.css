@@ -48,7 +48,8 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/flags.css);
 /* font*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/*spotify*/
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/AndroidPlayer.css");
 :root {
 	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
@@ -228,6 +229,14 @@
 /* emoji 96px */
 .emojiSpriteImage_bcf389[style*='background-image: url("/assets/23101e35c61b520c1471.png")'] {
 	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/emoji_96.png") !important;
+}
+
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-hi.gif?size=64&quality=lossless);
+    transform: translate(-100%, -110%);
+    display: inline-block;
+    scale: 0.32;
 }
 
 /* pembe taç */
