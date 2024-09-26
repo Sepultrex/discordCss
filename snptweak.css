@@ -50,53 +50,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*spotify*/
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/AndroidPlayer.css");
+
 :root {
-	/* font, change to 'gg sans' for default discord font*/
-	--font: 'figtree';
+    /* font, change to 'gg sans' for default discord font*/
+    --font: 'figtree';
 
-	--font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-	--corner-text: 'Sinop (❁´◡`❁)';
+    --corner-text: 'Sinop (❁´◡`❁)';
 
-	/* renkler ████████████*/
-	--snpc-00:	hsla(316, 22%, 10%, 0.5);
-	--snpc-01:	hsl(318, 20%, 10%);
-	--snpc-02:	hsl(318, 30%, 20%);
-	--snpc-03:	hsl(318, 40%, 30%);
-	--snpc-04:	hsl(318, 50%, 40%);
-	--snpc-05:	hsl(318, 60%, 50%);
-	--snpc-06:	hsl(318, 70%, 60%);
-	--snpc-07:	hsl(318, 80%, 70%);
-	--snpc-08:	hsl(318, 90%, 80%);
-	--snpc-09:  hsl(318, 100%, 90%);
-	
-	--text-0: white; 
-	--text-1: var(--text-2); 
-	--text-2: hsl(0, 0%, 100%);
-	--text-3: hsl(220, 15%, 72%);
-	--text-4: hsl(220, 15%, 72%);
-	--text-5: hsl(220, 15%, 35%); 
+    /* renkler ████████████*/
+    --snpc-00: hsla(316, 22%, 10%, 0.5);
+    --snpc-01: hsl(318, 20%, 10%);
+    --snpc-02: hsl(318, 30%, 20%);
+    --snpc-03: hsl(318, 40%, 30%);
+    --snpc-04: hsl(318, 50%, 40%);
+    --snpc-05: hsl(318, 60%, 50%);
+    --snpc-06: hsl(318, 70%, 60%);
+    --snpc-07: hsl(318, 80%, 70%);
+    --snpc-08: hsl(318, 90%, 80%);
+    --snpc-09: hsl(318, 100%, 90%);
+
+    --text-0: white;
+    --text-1: var(--text-2);
+    --text-2: hsl(0, 0%, 100%);
+    --text-3: hsl(220, 15%, 72%);
+    --text-4: hsl(220, 15%, 72%);
+    --text-5: hsl(220, 15%, 35%);
 
 
-	/* cee */
-	--theme-h: 0;
-	--theme-s: 0%;
-	--theme-l: 5%;
-	--primary-500-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 11.9%);
-	--primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 6.7%);
-	--primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 2.9%);
-	--primary-600-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 0%);
-	--primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 2.6%);
-	--primary-645-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 3.7%);
-	--primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 5.9%);
-	--primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 8.1%);
-	--primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 9.6%);
-	--primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 11.4%);
-	--primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 13.3%);
-	--primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 15.7%);
-	--primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 18.1%);
-	--primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 19.8%);
+    /* cee */
+    --theme-h: 0;
+    --theme-s: 0%;
+    --theme-l: 5%;
+    --primary-500-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 11.9%);
+    --primary-530-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 6.7%);
+    --primary-560-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 2.9%);
+    --primary-600-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) + 0%);
+    --primary-630-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 2.6%);
+    --primary-645-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 3.7%);
+    --primary-660-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 5.9%);
+    --primary-700-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 8.1%);
+    --primary-730-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 9.6%);
+    --primary-760-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 11.4%);
+    --primary-800-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 13.3%);
+    --primary-830-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 15.7%);
+    --primary-860-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 18.1%);
+    --primary-900-hsl: var(--theme-h) var(--theme-s) calc(var(--theme-l) - 19.8%);
   
 	/* color of links */
 	--accent-1: var(--snpc-07);
