@@ -50,6 +50,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*spotify*/
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/AndroidPlayer.css");
+
+/*root ████████████*/
 :root {
 	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
@@ -116,6 +118,14 @@
 	--brand-experiment: var(--snpc-01);
 	--status-danger: var(--accent-2);
 
+    /* küçük sunucu listesi*/
+    --HSL-server-icon-size: 35px; /* Size of the server icons | DEFAULT: 40px */
+
+
+    --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+    --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+    --server-container: calc(var(--server-size) + 20px);
+
 	/*animasyon ████████████*/
 	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
 
@@ -130,6 +140,23 @@
 	--roundness-xs: 10px; /* channels, buttons */
 	--roundness-xxs: 8px; /* searchbar, small elements */
 	
+}
+
+/* küçük sunucu listesi*/
+#app-mount .guilds_a4d4d9 {
+  width: var(--server-container);
+}
+
+#app-mount .guilds_a4d4d9 .svg_c5f96a,
+#app-mount .guilds_a4d4d9 .wrapper_c5f96a,
+#app-mount .guilds_a4d4d9 .guildsError-b7zR5H,
+#app-mount .guilds_a4d4d9 .placeholderMask_f734d8 {
+  width: var(--server-size);
+  height: var(--server-size);
+}
+
+#app-mount .guilds_a4d4d9 [class*=listItem]:not([class*=listItemWrapper]) {
+  width: var(--server-container);
 }
 
 /* kenar yumuşatma fln ████████████*/
