@@ -62,16 +62,18 @@
 	--corner-text: 'Sinop (❁´◡`❁)';
 
 	/* renkler ████████████*/
-	--snpc-00:	hsla(316, 22%, 10%, 0.5);
-	--snpc-01:	hsl(318, 20%, 10%);
-	--snpc-02:	hsl(318, 30%, 20%);
-	--snpc-03:	hsl(318, 40%, 30%);
-	--snpc-04:	hsl(318, 50%, 40%);
-	--snpc-05:	hsl(318, 60%, 50%);
-	--snpc-06:	hsl(318, 70%, 60%);
-	--snpc-07:	hsl(318, 80%, 70%);
-	--snpc-08:	hsl(318, 90%, 80%);
-	--snpc-09:  hsl(318, 100%, 90%);
+	--snpc-S1: hsl(320, 40%, 10%);
+
+	--snpc-00: hsla(316, 22%, 10%, 0.5);
+	--snpc-01: hsl(318, 20%, 10%);
+	--snpc-02: hsl(318, 30%, 20%);
+	--snpc-03: hsl(318, 40%, 30%);
+	--snpc-04: hsl(318, 50%, 40%);
+	--snpc-05: hsl(318, 60%, 50%);
+	--snpc-06: hsl(318, 70%, 60%);
+	--snpc-07: hsl(318, 80%, 70%);
+	--snpc-08: hsl(318, 90%, 80%);
+	--snpc-09: hsl(318, 100%, 90%);
 	
 	--text-0: white; 
 	--text-1: var(--text-2); 
@@ -163,6 +165,34 @@
 /*yakında*/
 
 /* renk düzenlemeleri ████████████*/
+/*mikrofonun calışmıyor uyarısı*/
+.notice_be03aa{
+	background-color: var(--snpc-04);
+}
+
+/*uyarı cart curt (automod)*/
+.automodMessage_d5deea
+{
+    background-color: var(--snpc-S1); 
+}
+
+.shieldIcon_cc3927 {
+    color: var(--snpc-07); 
+}
+
+
+/*resim kaldırma butonu*/
+.removeMosaicItemHoverButton_e5c1dc:hover {
+    background-color: var(--snpc-04);
+}
+
+
+/* message logger entegrasyonu*/
+/* hoverladığında hayla kırmızı silindiği anlaşılsın*/
+.messagelogger-deleted.messageListItem_d5deea .message_d5deea {
+    background-color: var(--snpc-S1);
+}
+
 /* poll zımbırtıları */
 .votePercentageBar_cf2c85 {
 	background: var(--snpc-00);
@@ -171,7 +201,7 @@
 
 /* pembe taç */
 svg[aria-label="Server Owner"] {
-    color: var(--snpc-04);
+    color: var(--snpc-07);
 }
 
 .message_d5deea.replying_d5deea.selected_d5deea, .mouse-mode.full-motion .message_d5deea.replying_d5deea:hover /* fix reply message hover */ {
@@ -549,39 +579,52 @@ img[role="presentation"] {
   display: block;
 }
 
-
 /* boş işleri gizliyoz████████████*/
 /* kullanıcı sağ click*/
-#user-context-mention,
-#user-context-note,
-#user-context-add-friend-nickname,
-#user-context-secure-frames-user-verification,
-#user-context-vc-view-user-raw,
-#user-context-view-avatar,
-#user-context-mod-view,
-#user-context-apps,
-#user-context-verify,
-#user-context-roles,
-#user-context-perm-viewer-permissions,
-#user-context-remove-friend,
-#user-context-block,
-#user-context-vc-rdb-user-reviews,
+.wrapper_a24e84, /* emotelar*/
+#message-mark-unread, /* mark unread*/
+#message-actions-mark-unread,
+#message-add-reaction,
+#message-actions-add-reaction, /* we already have this shit lmao*/
+#message-thread,
+#message-actions-thread, /*thread shit*/
+#message-tts, /* ew wtf*/
+#message-actions-tts,
+.separator_d90b3d, /* idk*/
+#message-edit,
+#message-reply,
+#message-actions-forward,
+#message-actions-reply,
+#user-profile-overflow-menu-vc-rdb-user-reviews,
+#user-profile-overflow-menu-view-profile,
+#user-profile-overflow-menu-invite-to-server,
+/* text channel rightclik*/
+#channel-context-channel-notifications,
+#channel-context-clone-channel,
+#channel-context-create-text-channel,
+#channel-context-edit-channel,
+#channel-context-delete-channel,
+/* vc rightclick*/
+#channel-context-set-status,
+#channel-context-open-chat,
+/*user rightclick*/
 #user-context-ban,
 #user-context-kick,
 #user-context-timeout,
-#message-reply,
-#message-pin,
-#message-edit,
-#message-copy-link,
-.separator_d90b3d,
-/* chatteki boş işleri kapama*/
-#message-mark-unread,
-#message-add-reaction,
-.wrapper_a24e84,
-.button_f7e168[aria-label="Mark Unread"],
-.button_f7e168[aria-label="View Raw (Left Click) / Copy Raw (Right Click)"],
-/* sunucu klasörlerini gizle*/
-.wrapper_bc7085
+#user-context-mod-view,
+#user-context-vc-rdb-user-reviews,
+#user-context-mention,
+#user-context-view-avatar,
+#user-context-view-server-avatar,
+#user-context-block,
+#user-context-remove-friend,
+#user-context-message-user,
+#user-context-roles,
+#user-context-note,
+#user-context-secure-frames-user-verification,
+#user-context-verify,
+#user-context-add-friend-nickname,
+#user-context-apps
 {
     display: none;
 }
