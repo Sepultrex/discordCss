@@ -628,3 +628,8 @@ img[role="presentation"] {
 {
     display: none;
 }
+
+/* why would i add you as friend if im already your friend? */
+[class*="biteSize_"] :is([aria-label="Friends"]) {
+  display: none;
+}
