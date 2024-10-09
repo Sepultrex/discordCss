@@ -59,7 +59,7 @@
 	--font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-	--corner-text: 'Sinop (❁´◡`❁)';
+	--corner-text: 'And maybe he can finally let go of the trauma That has fueled his art since the very beginning Who will he be without it? That chapter hasnt been written yet';
 
 	/* renkler ████████████*/
 	--snpc-S1: hsl(320, 40%, 10%);
@@ -385,7 +385,7 @@ svg[fill='#593695'] {
 	font-weight: 900;
 	color: var(--text-5);
 	transform: scaleX(1.2);
-	margin-left: 6px;
+	margin-left: 92px;
 }
 
 /* rearrange toolbar ████████████*/
