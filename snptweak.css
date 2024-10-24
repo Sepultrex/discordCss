@@ -62,18 +62,18 @@
 	--corner-text: 'And maybe he can finally let go of the trauma That has fueled his art since the very beginning Who will he be without it? That chapter hasnt been written yet';
 
 	/* renkler ████████████*/
-	--snpc-S1: hsl(320, 40%, 10%);
+	--snpc-S1: hsl(325, 40%, 10%);
 
-	--snpc-00: hsla(316, 22%, 10%, 0.5);
-	--snpc-01: hsl(318, 20%, 10%);
-	--snpc-02: hsl(318, 30%, 20%);
-	--snpc-03: hsl(318, 40%, 30%);
-	--snpc-04: hsl(318, 50%, 40%);
-	--snpc-05: hsl(318, 60%, 50%);
-	--snpc-06: hsl(318, 70%, 60%);
-	--snpc-07: hsl(318, 80%, 70%);
-	--snpc-08: hsl(318, 90%, 80%);
-	--snpc-09: hsl(318, 100%, 90%);
+	--snpc-00: hsla(330, 22%, 10%, 0.5);
+	--snpc-01: hsl(333, 20%, 10%);
+	--snpc-02: hsl(333, 30%, 20%);
+	--snpc-03: hsl(333, 40%, 30%);
+	--snpc-04: hsl(333, 50%, 40%);
+	--snpc-05: hsl(333, 60%, 50%);
+	--snpc-06: hsl(333, 70%, 60%);
+	--snpc-07: hsl(333, 80%, 70%);
+	--snpc-08: hsl(333, 90%, 80%);
+	--snpc-09: hsl(333, 100%, 90%);
 	
 	--text-0: white; 
 	--text-1: var(--text-2); 
