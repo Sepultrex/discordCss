@@ -633,3 +633,6 @@ img[role="presentation"] {
 [class*="biteSize_"] :is([aria-label="Friends"]) {
   display: none;
 }
+
+[class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
+    max-width: unset !important; /* allow it to be larger */ }
