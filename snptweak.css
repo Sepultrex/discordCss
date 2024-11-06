@@ -635,3 +635,8 @@ img[role="presentation"] {
     background: var(--background-accent);
   }
 }
+
+/* ismi "hidefolder" olan dosyaları gizler*/
+div[data-dnd-name="hidefolder"] {
+    display: none !important;
+}
