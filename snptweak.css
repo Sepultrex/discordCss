@@ -640,3 +640,8 @@ img[role="presentation"] {
 div[data-dnd-name="hidefolder"] {
     display: none !important;
 }
+
+/*clan tag shit*/
+[class*="clanTagChiplet_"] > [class*="text_"] {font-size: 0}
+[class*="chipletContainerInner_"] {display: inline; padding: 0 2px 0 4px;}
+[class*="clanTag"] > [class*="clickable"] > [class*="chipletContainerInner_"] {padding: 0 4px !important;}
