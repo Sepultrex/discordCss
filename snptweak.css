@@ -36,16 +36,6 @@
 /* a */
 @import url("https://minidiscordthemes.github.io/Snippets/RoleTint/main.css");
 @import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
-/* apple emoji şeyleri*/
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/people.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/nature.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/food.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/activity.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/travel.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/objects.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/symbols.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/src/Apple/flags.css);
 /* font*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*spotify*/
@@ -59,7 +49,7 @@
 	--font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-	--corner-text: 'And maybe he can finally let go of the trauma That has fueled his art since the very beginning Who will he be without it? That chapter hasnt been written yet';
+	--corner-text: 'Asopusun güzeller güzeli kızı';
 
 	/* renkler ████████████*/
 	--snpc-S1: hsl(325, 40%, 10%);
@@ -161,9 +151,6 @@
   width: var(--server-container);
 }
 
-/* kenar yumuşatma fln ████████████*/
-/*yakında*/
-
 /* renk düzenlemeleri ████████████*/
 /*mikrofonun calışmıyor uyarısı*/
 .notice_be03aa{
@@ -187,7 +174,7 @@
 }
 
 
-/* message logger entegrasyonu*/
+/* message logger*/
 /* hoverladığında hayla kırmızı silindiği anlaşılsın*/
 .messagelogger-deleted.messageListItem_d5deea .message_d5deea {
     background-color: var(--snpc-S1);
@@ -385,7 +372,7 @@ svg[fill='#593695'] {
 	font-weight: 900;
 	color: var(--text-5);
 	transform: scaleX(1.2);
-	margin-left: 92px;
+	margin-left: 12px;
 }
 
 /* rearrange toolbar ████████████*/
@@ -410,76 +397,6 @@ a[href="https://support.discord.com"] /* hide help */
 	margin-left: calc(var(--spacing) + 8px);
 }
 
-/* apple emoji şeyleri ████████████*/
-/* yellow 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/ed4ec792263b61d01fd3.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/yellow_80.png") !important;
-}
-
-/* light 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/f4390297a582e34b8284.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/light_80.png") !important;
-}
-
-/* light_medium 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/f09bcac9692c1fd5e30a.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/light_medium_80.png") !important;
-}
-
-/* medium 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/14f2e28d6a38d6b6910a.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/medium_80.png") !important;
-}
-
-/* dark_medium 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/6ecc96842a58c81ab7f0.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/dark_medium_80.png") !important;
-}
-
-/* dark 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/af91566c0347ee808b38.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/dark_80.png") !important;
-}
-
-/* emoji 80px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/ec1e5548cff444b412ff.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/emoji_80.png") !important;
-}
-
-/* yellow 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/f635361f4b5fd800e607.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/yellow_96.png") !important;
-}
-
-/* light 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/76b66f04d404c3120a70.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/light_96.png") !important;
-}
-
-/* light_medium 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/8ef10f8773903d88d9e2.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/light_medium_96.png") !important;
-}
-
-/* medium 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/64178cf22204679b06a2.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/medium_96.png") !important;
-}
-
-/* dark_medium 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/bcde2038e753f42fc3c3.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/dark_medium_96.png") !important;
-}
-
-/* dark 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/0c7da966cea29fba4790.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/dark_96.png") !important;
-}
-
-/* emoji 96px */
-.emojiSpriteImage_bcf389[style*='background-image: url("/assets/23101e35c61b520c1471.png")'] {
-	background-image: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/spritesheets/Apple/emoji_96.png") !important;
-}
 
 /*i'm new here, say hi! ████████████*/
 [class*=newMemberBadge]:before {
@@ -489,7 +406,7 @@ a[href="https://support.discord.com"] /* hide help */
     scale: 0.32;
 }
 
-/* evangelion shinji loader ████████████*/
+/* ryo loader ████████████*/
 .container_e40c16.fixClipping_c7e9c6 > .content_e40c16 {
   position: relative;
 }
@@ -542,7 +459,7 @@ span[class^="botTag"]::after {
 /* stream pip ████████████*/
 div:not(:has(.videoWrapper_f8a4f3)) + .pictureInPicture_e0c856,
 div:not(:has(.videoWrapper_f8a4f3)) + .pictureInPicture_e0c856 * {
-    opacity: 0.85; /* Opaklık %50'ye ayarlanmıştır, istediğin değeri kullanabilirsin */
+    opacity: 0.95; /* Opaklık %50'ye ayarlanmıştır, istediğin değeri kullanabilirsin */
 }
 
 /* susturulmus kanalların emojileri ████████████*/
@@ -593,7 +510,6 @@ img[role="presentation"] {
 .separator_d90b3d, /* idk*/
 #message-edit,
 #message-reply,
-#message-actions-forward,
 #message-actions-reply,
 #user-profile-overflow-menu-vc-rdb-user-reviews,
 #user-profile-overflow-menu-view-profile,
@@ -601,9 +517,6 @@ img[role="presentation"] {
 /* text channel rightclik*/
 #channel-context-channel-notifications,
 #channel-context-clone-channel,
-#channel-context-create-text-channel,
-#channel-context-edit-channel,
-#channel-context-delete-channel,
 /* vc rightclick*/
 #channel-context-set-status,
 #channel-context-open-chat,
@@ -618,7 +531,6 @@ img[role="presentation"] {
 #user-context-view-server-avatar,
 #user-context-block,
 #user-context-remove-friend,
-#user-context-message-user,
 #user-context-roles,
 #user-context-note,
 #user-context-secure-frames-user-verification,
@@ -636,3 +548,4 @@ img[role="presentation"] {
 
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
+
