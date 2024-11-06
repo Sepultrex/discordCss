@@ -40,6 +40,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*spotify*/
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/AndroidPlayer.css");
+/*bisiler bisiler*/
+@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtons.theme.css");
 
 /*root ████████████*/
 :root {
@@ -549,3 +551,87 @@ img[role="presentation"] {
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
 
+/* rainbow foldders*/
+@keyframes rainbowBackgroundTransparent {
+    0% { background-color: vatr; }      /* Red */
+    16% { background-color: rgba(255, 165, 0, 0.4); }    /* Orange */
+    33% { background-color: rgba(255, 255, 0, 0.4); }    /* Yellow */
+    50% { background-color: rgba(0, 128, 0, 0.4); }      /* Green */
+    66% { background-color: rgba(0, 0, 255, 0.4); }      /* Blue */
+    83% { background-color: rgba(75, 0, 130, 0.4); }     /* Indigo */
+    100% { background-color: rgba(238, 130, 238, 0.4); } /* Violet */
+  }
+  
+  @keyframes rainbow {
+    0% { color: rgba(255, 0, 0, 1); }      /* Red */
+    16% { color: rgba(255, 165, 0, 1); }    /* Orange */
+    33% { color: rgba(255, 255, 0, 1); }    /* Yellow */
+    50% { color: rgba(0, 128, 0, 1); }      /* Green */
+    66% { color: rgba(0, 0, 255, 1); }      /* Blue */
+    83% { color: rgba(75, 0, 130, 1); }     /* Indigo */
+    100% { color: rgba(238, 130, 238, 1); } /* Violet */
+  }
+  
+  [aria-label*=gay] [class*=folderIconWrapper] {
+    animation: rainbowBackgroundTransparent 5s infinite;
+    transition: background-color 0.5s ease;
+  }
+  
+  [aria-label*=gay] [class*=folderIconWrapper] svg {
+    animation: rainbow 5s infinite;
+    transition: color 0.5s ease;
+  }
+
+/* Better Soundboard/Emoji Picker*/
+[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]),
+[class*=categorySectionNitroLocked_] [class*=emojiItem_]>img,
+[class*=soundRowNitroLocked_] [class^=soundButton_] {
+  filter: grayscale(1) brightness(0.75);
+}
+
+[class^=emojiLockIconContainer_],
+[class^=picker_] [class^=sectionFooter_],
+:is(#emoji-picker-tab-panel, [class^=picker_]) :is(
+  [class^=upsellContainer_],
+  [class^=nitroBottomDivider_],
+  [class^=categoryItemLockIconContainer_]
+) {
+  display: none;
+}
+
+#emoji-picker-tab-panel [class*=categorySectionNitroLocked_],
+[class^=picker_] :is(
+  [class*=sectionContainerNitroLocked_],
+  [class*=soundRowNitroLocked_]
+) {
+  background-color: transparent;
+}
+
+#emoji-picker-tab-panel [class^=closeButton_] {
+  padding: 16px 16px calc(100% - 106px) calc(100% - 40px);
+  margin: 0;
+}
+[class^=picker_] {
+  >[class^=container] [class^=closeButton_] {
+    padding: 16px 16px calc(420px - 106px) calc(100% - 40px);
+    margin: 0;
+  }
+
+  [class^=buttonOverlayActions_] {
+    padding: 0;
+  }
+  [class^=secondaryButton_] {
+    padding: 8px;
+  }
+}
+
+#emoji-picker-tab-panel, [class^=picker_] {
+  [class^=nitroTopDividerShadow_],
+  [class^=nitroTopDividerLower_] {
+    visibility: hidden;
+  }
+  [class^=nitroTopDividerLock],
+  [class^=nitroTopDividerLower_] {
+    background: var(--background-accent);
+  }
+}
