@@ -344,7 +344,7 @@ svg[fill='#593695'] {
 	margin-bottom: -12px;
 }
 
-/* custom dm button moon icon ████████████*/
+/* custom dm button ████████████*/
 .childWrapper_f90abb > svg:not(.favoriteIcon_dcc7a4) {
 	display: none;
 }
@@ -384,7 +384,7 @@ a[href="https://support.discord.com"] /* hide help */
 }
 .search_ff5f90 {
 	order: 1;
-	margin: 0 4px 0 12px;
+	margin: 0 4px 0 -5px;
 }
 .chat_a7d72e:has(.searchResultsWrap_c2b47d) .searchBar_a46bef {
 	width: 394px !important;
@@ -395,7 +395,7 @@ a[href="https://support.discord.com"] /* hide help */
 	margin-left: calc(var(--spacing) + 8px);
 }
 .chat_a7d72e:has(.membersWrap_cbd271) .searchBar_a46bef {
-	width: 216px !important;
+	width: 150px !important;
 	margin-left: calc(var(--spacing) + 8px);
 }
 
@@ -432,20 +432,12 @@ a[href="https://support.discord.com"] /* hide help */
 /* konata ████████████*/
 [class^="panels_a4d4d9"]::before {
   content: "";
-  width: 100px;
-  height: 60px;
-  left: 154px;
+  width: 50px;
+  height: 50px;
+  left: 185px;
   margin-top: -54px;
   position: absolute;
-  background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/konata.gif");
-}
-
-/* bot isimleri fix ████████████*/
-span[class^="botTag"] > span[class^="botText"] {
-  display: inline !important;
-}
-span[class^="botTag"]::after {
-  content: unset !important;
+  background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-guita50.gif");
 }
 
 /* Custom Emoji Button ████████████*/
@@ -461,7 +453,7 @@ span[class^="botTag"]::after {
 /* stream pip ████████████*/
 div:not(:has(.videoWrapper_f8a4f3)) + .pictureInPicture_e0c856,
 div:not(:has(.videoWrapper_f8a4f3)) + .pictureInPicture_e0c856 * {
-    opacity: 0.95; /* Opaklık %50'ye ayarlanmıştır, istediğin değeri kullanabilirsin */
+    opacity: 0.95; 
 }
 
 /* susturulmus kanalların emojileri ████████████*/
@@ -529,9 +521,6 @@ img[role="presentation"] {
 #user-context-mod-view,
 #user-context-vc-rdb-user-reviews,
 #user-context-mention,
-#user-context-view-avatar,
-#user-context-view-server-avatar,
-#user-context-block,
 #user-context-remove-friend,
 #user-context-roles,
 #user-context-note,
@@ -543,51 +532,12 @@ img[role="presentation"] {
     display: none;
 }
 
-/* why would i add you as friend if im already your friend? */
-[class*="biteSize_"] :is([aria-label="Friends"]) {
-  display: none;
-}
 
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
 
-/* rainbow foldders*/
-@keyframes rainbowBackgroundTransparent {
-    0% { background-color: vatr; }      /* Red */
-    16% { background-color: rgba(255, 165, 0, 0.4); }    /* Orange */
-    33% { background-color: rgba(255, 255, 0, 0.4); }    /* Yellow */
-    50% { background-color: rgba(0, 128, 0, 0.4); }      /* Green */
-    66% { background-color: rgba(0, 0, 255, 0.4); }      /* Blue */
-    83% { background-color: rgba(75, 0, 130, 0.4); }     /* Indigo */
-    100% { background-color: rgba(238, 130, 238, 0.4); } /* Violet */
-  }
-  
-  @keyframes rainbow {
-    0% { color: rgba(255, 0, 0, 1); }      /* Red */
-    16% { color: rgba(255, 165, 0, 1); }    /* Orange */
-    33% { color: rgba(255, 255, 0, 1); }    /* Yellow */
-    50% { color: rgba(0, 128, 0, 1); }      /* Green */
-    66% { color: rgba(0, 0, 255, 1); }      /* Blue */
-    83% { color: rgba(75, 0, 130, 1); }     /* Indigo */
-    100% { color: rgba(238, 130, 238, 1); } /* Violet */
-  }
-  
-  [aria-label*=gay] [class*=folderIconWrapper] {
-    animation: rainbowBackgroundTransparent 5s infinite;
-    transition: background-color 0.5s ease;
-  }
-  
-  [aria-label*=gay] [class*=folderIconWrapper] svg {
-    animation: rainbow 5s infinite;
-    transition: color 0.5s ease;
-  }
 
 /* Better Soundboard/Emoji Picker*/
-[class^=lockedEmoji_]:has(+[class*=emojiLockIconContainer_]),
-[class*=categorySectionNitroLocked_] [class*=emojiItem_]>img,
-[class*=soundRowNitroLocked_] [class^=soundButton_] {
-  filter: grayscale(1) brightness(0.75);
-}
 
 [class^=emojiLockIconContainer_],
 [class^=picker_] [class^=sectionFooter_],
