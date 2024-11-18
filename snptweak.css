@@ -594,3 +594,9 @@ div[data-dnd-name="hidefolder"] {
 /*clan tag shit*/
 [class*="chipletContainerInner_"] > [class*="text_"] {font-size: 0}
 [class*="chipletContainerInner_"] {display: inline; padding: 0 2px 0 4px;}
+
+/*i fucking hate quest badge fr*/
+div[aria-label="Completed a Quest"] {
+    display: none;
+}
+
