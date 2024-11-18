@@ -600,3 +600,15 @@ div[aria-label="Completed a Quest"] {
     display: none;
 }
 
+/* Brighter Status Text for Custom Profiles */
+.custom-profile-theme [class^=statusBubble_] [class^=defaultColor_] {
+  color: var(--white-500);
+}
+
+/* Match Status Bubble Color with Profile Button Color for Custom Profiles */
+.custom-profile-theme [class^=statusBubble_],
+.custom-profile-theme [class^=statusBubbleOuter_]:before,
+.custom-profile-theme [class^=statusBubbleOuter_]:after {
+  background-color: var(--profile-gradient-button-color);
+}
+
