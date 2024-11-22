@@ -612,3 +612,8 @@ div[aria-label="Completed a Quest"] {
   background-color: var(--profile-gradient-button-color);
 }
 
+/* OMG İ HATE BADGESSSSSS*/
+div[class="container_b64375"]
+{
+    display: none;
+}
