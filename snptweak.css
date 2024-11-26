@@ -34,7 +34,6 @@
 /*cee css*/
 @import url("https://raw.githubusercontent.com/ceeprus/discordDark/main/theme.css");
 /* a */
-@import url("https://minidiscordthemes.github.io/Snippets/RoleTint/main.css");
 @import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
 /* font*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -42,6 +41,10 @@
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/AndroidPlayer.css");
 /*bisiler bisiler*/
 @import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtons.theme.css");
+/*ctrl+k*/
+@import url("https://dablulite.github.io/css-snippets/QuickSwitchV2/import.css");
+
+
 
 /*root ████████████*/
 :root {
@@ -207,7 +210,7 @@ svg[aria-label="Server Owner"] {
 .lookFilled_dd4f85.colorGreen_dd4f85 /* green buttons */,
 .lookFilled_dd4f85.colorRed_dd4f85 /* red buttons */,
 .lookFilled_dd4f85.colorYellow__818c3 /* yellow buttons */,
-.bar_edf32f /* NEW unread pill */,
+.bar_c10249 /* NEW unread pill */,
 .wrapper_f90abb:hover .childWrapper_f90abb, /* default server icon text */ 
 .wrapper_f90abb.selected_ae80f7 .childWrapper_f90abb /* default server icon text */,
 .colorDefault_d90b3d.focused_d90b3d /* menu option hover */,
@@ -222,7 +225,7 @@ svg[aria-label="Server Owner"] {
 .dots_ce0450 /* typing dots */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */,
 .header_dd5a33 /* server preview mode banner */,
-.live_ec1c2d /* streaming live */,
+.live_e17fae /* streaming live */,
 #app-mount .activeButton_b48941 /* member page pagination button */ ,
 #app-mount .tooltipBrand_b6c360 /* member page filter tooltip */,
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac /* active voice channel icons */,
@@ -612,3 +615,75 @@ div[class="container_b64375"]
 {
     display: none;
 }
+
+
+.role_f9575e {
+	transform: translate(0);
+	overflow: hidden;
+	border: 0;
+  
+	--transparency: .4;
+	/*Change Background Opacity*/
+	border-radius: 5px;
+	/*Change Roundness of Roles*/
+  }
+  .role_f9575e .roleRemoveIcon_f9575e {
+	margin: 0;
+	left: unset;
+	transform: translate(16%, -48%);
+  }
+  .role_f9575e .roleRemoveButton_f9575e {
+	position: static;
+  }
+  .role_f9575e .roleCircle_f9575e:after {
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	opacity: var(--transparency);
+  }
+  /* --------------- Separated the code due to position difference */
+  .role_e4010c {
+	transform: translate(0);
+	overflow: hidden;
+	border: 0;
+  
+	--transparency: .4;
+	border-radius: 5px;
+  }
+  .role_e4010c .roleRemoveIcon_e4010c {
+	margin: 0;
+	left: unset;
+	transform: translate(50%,-50%);
+  }
+  .role_e4010c .roleRemoveButton_e4010c {
+	position: static;
+  }
+  .role_e4010c .roleCircle_a26d7b:after {
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: inherit;
+	opacity: var(--transparency);
+  }
+
+
+/* damn activites? dont care lol*/
+.membersGroup_cbd271:has(>.headerContainer_bc6acb),
+.membersWrap_cbd271 .openOnHover_c64476{
+    display: none!important;
+}
+
+/* fix camera mirror*/
+.mirror_e336b2 {
+	transform: unset;
+  }
+
