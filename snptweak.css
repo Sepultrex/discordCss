@@ -54,7 +54,7 @@
 	--corner-text: 'Asopusun güzeller güzeli kızı';
 
 	/* renkler ████████████*/
-	--snpc-S1: hsl(325, 40%, 10%);
+	--snpc-S1: hsl(230, 40%, 10%);
 
 	--snpc-00: hsla(230, 22%, 10%, 0.5);
 	--snpc-01: hsl(235, 20%, 10%);
@@ -207,7 +207,7 @@ svg[aria-label="Server Owner"] {
 .lookFilled_dd4f85.colorGreen_dd4f85 /* green buttons */,
 .lookFilled_dd4f85.colorRed_dd4f85 /* red buttons */,
 .lookFilled_dd4f85.colorYellow__818c3 /* yellow buttons */,
-.bar_c10249 /* NEW unread pill */,
+.bar_edf32f /* NEW unread pill */,
 .wrapper_f90abb:hover .childWrapper_f90abb, /* default server icon text */ 
 .wrapper_f90abb.selected_ae80f7 .childWrapper_f90abb /* default server icon text */,
 .colorDefault_d90b3d.focused_d90b3d /* menu option hover */,
@@ -222,7 +222,7 @@ svg[aria-label="Server Owner"] {
 .dots_ce0450 /* typing dots */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */,
 .header_dd5a33 /* server preview mode banner */,
-.live_e17fae /* streaming live */,
+.live_ec1c2d /* streaming live */,
 #app-mount .activeButton_b48941 /* member page pagination button */ ,
 #app-mount .tooltipBrand_b6c360 /* member page filter tooltip */,
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac /* active voice channel icons */,
@@ -594,11 +594,6 @@ div[data-dnd-name="hidefolder"] {
 /*clan tag shit*/
 [class*="chipletContainerInner_"] > [class*="text_"] {font-size: 0}
 [class*="chipletContainerInner_"] {display: inline; padding: 0 2px 0 4px;}
-
-/*i fucking hate quest badge fr*/
-div[aria-label="Completed a Quest"] {
-    display: none;
-}
 
 /* Brighter Status Text for Custom Profiles */
 .custom-profile-theme [class^=statusBubble_] [class^=defaultColor_] {
