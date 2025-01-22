@@ -57,18 +57,18 @@
 
 
 	/* colors */
-	--snpc-S1: hsl(230, 40%, 10%);
+	--snpc-S1: hsl(32, 40%, 10%);
 
-	--snpc-00: hsla(230, 22%, 10%, 0.5);
-	--snpc-01: hsl(235, 20%, 10%);
-	--snpc-02: hsl(235, 30%, 20%);
-	--snpc-03: hsl(235, 40%, 30%);
-	--snpc-04: hsl(235, 50%, 40%);
-	--snpc-05: hsl(235, 60%, 50%);
-	--snpc-06: hsl(235, 70%, 60%);
-	--snpc-07: hsl(235, 80%, 70%);
-	--snpc-08: hsl(235, 90%, 80%);
-	--snpc-09: hsl(235, 100%, 90%);
+	--snpc-00: hsla(30, 22%, 10%, 0.5);
+	--snpc-01: hsl(32, 20%, 10%);
+	--snpc-02: hsl(32, 30%, 20%);
+	--snpc-03: hsl(32, 40%, 30%);
+	--snpc-04: hsl(32, 50%, 40%);
+	--snpc-05: hsl(32, 60%, 50%);
+	--snpc-06: hsl(32, 70%, 60%);
+	--snpc-07: hsl(32, 80%, 70%);
+	--snpc-08: hsl(32, 90%, 80%);
+	--snpc-09: hsl(32, 100%, 90%);
 	
 
 	--text-0: white; 
@@ -84,7 +84,7 @@
 	/* color of unread dividers and some indicators */
 	--accent-2: var(--snpc-05);
 	/* color of accented buttons */
-	--accent-3: var(--snpc-04);
+	--accent-3: var(--snpc-05);
 	/* color of accented buttons when hovered */
 	--accent-4: var(--snpc-06);
 	/* color of accented buttons when clicked */
