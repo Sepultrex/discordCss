@@ -1,0 +1,545 @@
+/*mann i love ryo yamada⣿⣿⣿⣿⣿⡿⠿⢿⣛⣛⣛⣭⣭⣭⣭⣭⣭⣭⣭⣭⣽⣙⣛⣛⣻⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢛⣩⣴⣶⣿⠿⠿⣛⣛⣩⣭⣭⣭⣷⣶⣶⣶⣾⣭⣭⣝⣛⡻⠿⣿⣶⣮⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣋⣵⣾⠿⢛⣩⣵⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⣝⡻⢿⣷⣬⡛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⣡⡾⢟⣩⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⡻⣿⣶⣝⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣡⠞⣫⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣝⠻⣷⣜⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣱⠟⣡⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣌⠻⣦⠻⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⢏⡴⢋⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡝⣧⠹⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⡿⢣⡾⣱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⡜⢧⠹⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡿⢡⡿⣱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⠛⣿⣿⣷⢰⡜⣿⡌⢷⠹⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⢡⡿⢱⣿⣿⢋⣴⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢇⡇⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢿⡇⣆⢻⣿⣷⡘⣿⣿⡎⣧⢹⣿⡜⣧⢻⣿⣿⣿⣿
+⣿⣿⣿⣿⢃⣿⢣⣿⣿⣇⣿⡏⣼⣿⣿⣿⢋⡍⣿⣿⣿⣿⣿⣀⢻⣿⣿⣿⡿⣾⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠘⣿⡘⣸⣿⣿⣧⢹⣿⣿⣌⣸⣿⣷⢹⡌⣿⣿⣿⣿
+⣿⣿⣿⠃⣼⡏⣾⣿⣿⡟⠟⣰⣿⣿⣿⣿⠺⢃⣿⣿⣿⣿⣿⠟⣼⣿⣿⣿⢣⣿⣿⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢹⣿⣿⣶⣿⣷⣼⣿⣿⣿⡆⢿⣿⣿⣿⣿⣿⡆⣷⢸⣿⣿⣿
+⣿⡿⢡⢰⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⡏⣸⣿⣿⡇⢿⣿⣿⣿⣿⢹⣿⣿⣿⣿⡄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢸⣿⣿⣿⣿⣿⣷⢹⣼⣿⣿⣿
+⡟⣱⡟⣾⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠂⣿⣿⣿⣿⡘⣿⣿⣿⣿⠈⣿⣿⣿⣿⣷⢸⣿⣿⡿⣿⣿⣿⣿⣿⣿⡆⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿
+⣼⣿⡇⣿⠃⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⢿⣿⢸⣿⣿⣿⣿⣧⢹⣿⣿⡟⠂⠘⠻⠿⠿⣿⡆⢿⣿⡇⢿⣿⣿⣿⣿⣿⣧⢸⣿⣿⣿⣿⣿⡘⡇⣿⣿⣿
+⣿⣿⢷⣿⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡖⢿⣿⣿⣿⣿⡏⢸⣿⣿⣿⣿⣿⡆⢻⣿⣿⡇⢧⠹⣿⣿⣿⣧⠈⣿⣿⢸⣿⣿⣿⣿⣿⣿⠸⣿⣿⣿⣿⣿⣧⠹⡜⢿⣿
+⣿⣿⢸⡿⢀⢸⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⠇⢸⣿⣿⣿⣿⡇⣾⣿⣿⣿⣿⣿⣿⡌⢿⣿⣿⢸⣧⢻⣿⣿⣿⡐⡜⢿⠸⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣝⠦⣝
+⣿⣿⡘⡇⣿⠸⣿⣿⣿⣿⣿⣿⣿⡇⢻⣿⣿⣿⣿⣿⡆⡌⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⡌⢿⣿⡈⣿⣆⢻⣿⣿⡇⣿⡌⠄⣿⣿⣿⣿⣿⣿⡀⢿⣿⣿⣿⣿⣿⣿⣿⣷⣮
+⣿⣿⡇⡇⣿⡇⢿⣿⣿⡟⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⡇⣇⢻⣿⣿⣿⡇⢿⣿⣿⣿⣿⣿⣿⣿⣿⣌⢻⡇⣿⣿⣦⢻⣿⣧⢸⣿⡆⣿⣿⣿⣿⣿⣿⣇⣄⢿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣷⠃⣿⠇⡘⣿⣿⣇⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠇⠿⠸⠿⠿⠿⢇⢸⣿⣿⣿⣿⣿⣿⣿⣿⠿⠦⠃⠿⠿⠿⠧⠙⠿⠸⠿⡇⣿⢻⣿⣿⣿⣿⣇⣿⠠⡙⢿⣿⣿⣿⡏⠙⣿
+⣿⣿⣿⡆⠋⢸⣷⡘⣿⣿⢻⣿⣿⣿⡟⢯⣤⠀⣤⣤⡄⠀⠀⠤⡤⠠⠌⢸⣿⣿⣿⣿⣿⣿⣿⣯⠄⠀⣀⣀⣀⣀⡀⠀⠀⣠⣬⡅⣿⢸⣿⣿⣿⣿⡇⠇⢸⣿⡈⣿⣿⣿⢰⣇⢻
+⣿⣿⡟⠡⢊⡄⢿⣷⠌⢿⢸⣿⣿⣿⣇⣈⢉⣀⣉⡩⠥⠶⣶⣀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⡀⠴⠶⠶⠶⠦⣀⣴⢿⣿⢣⣿⢸⣿⣿⣿⣿⡇⢀⣿⣿⡇⣿⡿⣣⣿⣿⢸
+⣿⣿⣿⣿⣿⣿⣮⡛⢰⣄⠸⣿⡿⢟⣫⣵⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣿⢸⡇⣸⣿⣿⣿⣿⠇⠛⣿⣿⡇⣋⣼⣿⣿⡏⢫
+⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⢀⣴⠾⢛⣩⣴⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⡾⠀⣿⣿⠿⢛⢛⣠⠤⢟⣡⣾⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡌⣴⣾⣿⠿⢛⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠘⡀⠀⣡⣶⣾⣿⣿⣿⣼⣿⣟⣻⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢛⣩⣴⠞⣫⣤⡌⣙⠛⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⢉⣠⣴⡆⣡⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢛⣩⣴⣿⣿⣿⠇⣿⣷⡙⠀⣦⣌⠉⢟⣛⠛⠛⠿⢿⣿⡿⠟⣛⣿⠋⠉⠉⠀⡀⠀⠀⠈⠋⠈⠆⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⡿⢻⣿⠟⣡⣾⣿⣿⣿⣤⣿⣿⡿⠂⠀⠀⢰⡆⡀⠀⢺⣿⣿⡟⢀⠀⠀⢰⣿⠀⢀⣠⡄⠈⠀⢥⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⡇⣄⣥⣾⣿⣿⣿⣿⣿⣿⡿⢫⣤⣄⣀⠀⢻⡿⢠⣤⠀⠹⠟⣠⣿⣤⠈⢾⣿⠎⠘⣋⣤⣴⣶⣶⡌⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⣴⣿⣿⣿⣿⣿⣿⣿⣿⡿⢱⣿⣿⣿⣿⣷⡄⠃⣼⣿⣿⣦⣴⣿⣿⣿⣿⣌⠃⣴⣿⣿⣿⣿⣿⣿⣿⡆⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⡿⠀⣬⣍⣛⣛⣛⣂⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣬⣛⣛⣛⣛⣛⡋⢹⣿⡌⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣸⡇⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣷⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*spotify */
+@import url("https://raw.githubusercontent.com/Panniku/vc-snippets/main/BetterSpotifyPlayer.css");
+/*ctrl+k */
+@import url("https://dablulite.github.io/css-snippets/QuickSwitchV2/import.css");
+/* üç nokta menü  */
+@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+
+:root {
+    /* top right corner menu  */
+    --bartender-width: 4ch;
+
+    /* font, change to 'gg sans' for default discord font */
+    --font: 'figtree';
+
+    /* color of links  */
+    --accent-1: hsl(325, 80%, 60%);
+    /* color of unread dividers and some indicators  */
+    --accent-2: hsl(325, 80%, 52%);
+    /* color of accented buttons  */
+    --accent-3: hsl(325, 80%, 44%);
+    /* color of accented buttons when hovered  */
+    --accent-4: hsl(325, 80%, 36%);
+    /* color of accented buttons when clicked  */
+    --accent-5: hsl(325, 80%, 28%);
+    /* color of mentions and messages that mention you  */
+    --mention: hsla(325, 80%, 52%, 0.08);
+    /* color of mentions and messages that mention you when hovered  */
+    --mention-hover: hsla(325, 80%, 52%, 0.05);
+
+    --brand-experiment: hsl(278, 80%, 52%);
+    --status-danger: var(--accent-2);
+    /* Automatically resizing gif picker  */
+    --expression-picker-aspect-ratio: 1.125 / 1;
+
+    /* font family  */
+    --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*tx to cee*/
+
+/* custom dm button  */
+.childWrapper__6e9f8>svg:not(.favoriteIcon_c9fddf) {
+    display: none;
+}
+
+/* custom dm button background instead of wumpus?  */
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf)) {
+    background: url('https://cdn.discordapp.com/emojis/1085365741685047306.gif?size=128&quality=lossless');
+    background-color: transparent !important;
+    background-size: cover;
+}
+
+/* hide ❓ */
+a[href="https://support.discord.com"] {
+    display: none;
+}
+
+/*i'm new here, say hi!  */
+[class*=newMemberBadge]:before {
+    content: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-hi.gif?size=64&quality=lossless);
+    transform: translate(-100%, -110%);
+    display: inline-block;
+    scale: 0.32;
+}
+
+/* ryo loader  */
+.container_a2f514.fixClipping_efbae7>.content_a2f514 {
+    position: relative;
+}
+
+.container_a2f514.fixClipping_efbae7>.content_a2f514 .ready_a2f514 {
+    display: none;
+}
+
+.container_a2f514.fixClipping_efbae7>.content_a2f514 .ready_a2f514+.text_a2f514 {
+    top: 50px;
+}
+
+.container_a2f514.fixClipping_efbae7>.content_a2f514::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-loading.gif") center/80% no-repeat !important;
+    image-rendering: pixelated;
+}
+
+/* ryo chase  */
+[class^="panels_c48ade"]::before {
+    content: "";
+    width: 100px;
+    height: 50px;
+    left: 210px;
+    margin-top: -50px;
+    position: absolute;
+    background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/NijikaChasesRyo.gif");
+    background-size: contain;
+}
+
+/*silly vencord settings gif changer  */
+img[role="presentation"] {
+    content: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-idle.gif') !important;
+    transform: rotate(0deg) !important;
+}
+
+/* ryo peek  */
+[id*="popout_"]::after,
+[class*=menu]::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-peek.png');
+    background-size: cover;
+}
+
+/* icon fix for muted channels  */
+[class*="modeMuted_"]:has([class^="icon_"]) [class^="name_"] {
+    color: var(--channel-icon);
+    opacity: 35%;
+}
+
+/* useless things */
+
+/* ▶▶ chat right click menu (user) */
+/* add note */#user-context-note,
+/* Change Friend Nickname */#user-context-edit-friend-nickname,
+/* Add Friend Nickname */#user-context-add-friend-nickname,
+/* Apps */#user-context-apps,
+/* invite to server */#user-context-invite-to-server,
+/* verify member */#user-context-verify,
+/* timeout */#user-context-timeout,
+/* kick */#user-context-kick,
+/* ban */#user-context-ban,
+/* roles */#user-context-roles,
+/* change nickname */#user-context-change-nickname,
+/* Move to */#user-context-voice-move,
+/* view avatar */#user-context-view-avatar,
+/* view server avatar */#user-context-view-server-avatar,
+/* clear message log */#user-context-vc-ml-clear-channel,
+/* ▶▶ vc right click menu (user) ◀◀ */
+/* mention */#user-context-mention,
+/* view verification code */#user-context-secure-frames-user-verification,
+/* ▶▶ chat right click menu (message) ◀◀ */
+/* reaction bar */.wrapper_f563df,
+/* add reaction */#message-add-reaction,
+/* edit message */#message-edit,
+/* reply */#message-reply,
+/* forward */#message-forward,
+/* pin message */#message-pin,
+/* mark unread (who tf using this)*/#message-mark-unread,
+/* apps */#message-apps,
+/* speak message */#message-tts,
+/* delete message */#message-delete,
+/* copy message link */#message-copy-link,
+/* ▶▶ user profile ◀◀ */
+/* invite to server */#user-profile-overflow-menu-invite-to-server,
+/* seperator */.separator_c1e9c4 {
+    display: none;
+}
+
+/* hide folder  */
+div[data-dnd-name="hidefolder"] {
+    display: none !important;
+}
+
+/*clan tag shit */
+[class*="chipletContainerInner_"]>[class*="text_"] {
+    font-size: 0
+}
+
+[class*="chipletContainerInner_"] {
+    display: inline;
+    padding: 0 2px 0 4px;
+}
+
+/* OMG İ HATE BADGESSSSSS */
+div[class="container__8061a"] {
+    display: none;
+}
+
+/* role pill customization  */
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6>span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
+}
+
+/* damn activites? dont care lol */
+.membersGroup_c8ffbb:has(>.headerContainer__095fe),
+.membersWrap_c8ffbb .openOnHover__0f2e8 {
+    display: none !important;
+}
+
+/* Hide add a server button  */
+[aria-label="Add a Server"] {
+    display: none !important;
+}
+
+/* pin menu */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]) {
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/* dim all category labels  */
+[class="mainContent__29444"] {
+    opacity: 70%;
+}
+
+/* hide category dropdown arrows, instead dim label when collapsed  */
+[class="mainContent__29444"]>[class="icon__29444"] {
+    display: none;
+}
+
+[class="mainContent__29444"][aria-expanded="false"] {
+    opacity: 50% !important;
+}
+
+/* make unread channel's icons brighter (because the unread indicator is now hidden) */
+.modeUnreadImportant__2ea32 .icon__2ea32,
+.modeUnreadImportant__2ea32:hover .icon__2ea32,
+.modeSelected__2ea32:hover .icon__2ea32 {
+    color: var(--interactive-active);
+}
+
+/* channel list  */
+/* squish channel height/spacing  */
+[class="link__2ea32"] {
+    padding-block: 3px;
+}
+
+/* squeeze channel list left  */
+.wrapper__2ea32:not(.typeThread__2ea32) {
+    margin-left: 1 !important;
+}
+
+.wrapper__29444 {
+    padding-left: 8px !important;
+}
+
+/* why would i add you as friend if im already your friend?  */
+[class*="biteSize_"] :is([aria-label="Friends"]) {
+    display: none;
+}
+
+/* no more ads in voice channels  */
+.wrapper_e9b191 {
+    display: none;
+}
+
+/* Change APP tag to BOT  */
+span[class^="botTag"]>span[class^="botText"] {
+    display: none;
+}
+
+span[class^="botTag"]::after {
+    content: "BOT";
+}
+
+[href="/store"],
+[aria-label*="Share Nitro with Friends"],
+[href="/shop"] {
+    display: none;
+}
+
+/* image hover  */
+[aria-label*="Edit Image with Apps"] {
+    display: none;
+}
+
+#channel-attach-SLASH_COMMAND,
+/* Removes Chatbox from channel that don't allow you to communicate  */
+.channelTextAreaDisabled__74017,
+/* Removes Follow banner on bottom of channels  */
+.wrapper__44df5 {
+    display: none;
+}
+
+/* Text Bar  */
+[aria-label*='Open sticker picker'],
+[aria-label*='Send a gift'],
+.channelAppLauncher_e6e74f {
+    display: none !important;
+}
+
+/* Message shift-hover  */
+[aria-label*="Create Thread"],
+[aria-label*="Mark Unread"],
+[aria-label*="Copy Message ID"] {
+    display: none;
+}
+
+/* Fav gif icon opacity */
+.gifFavoriteButton_b7e1cb {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* edited text  */
+.timestamp_c19a55:not(.timestampInline_c19a55) time::after {
+    content: " (" attr(aria-label) ")";
+    font-size: 0.95em;
+}
+
+.edited_c19a55:not(.message-translate-indicator) {
+    display: none;
+}
+
+/* Discover  */
+.footer__214dc,
+[aria-label*="Discover"] {
+    display: none;
+}
+
+[class^="userPopoutInner_"] [class^="blockquoteContainer_"] {
+    max-height: 90px;
+}
+
+/* COLOR  */
+
+/* replace ping/strikethrough red  */
+.numberBadge__2b1f5,
+/* dm unread number  */
+.mention__3b95d {
+    background: var(--accent-2) !important;
+}
+
+/* unread dividers  */
+.divider__908e2 {
+    --divider-color: var(--accent-2);
+}
+
+/* mute button strikethrough  */
+.icon__07f91 {
+    color: var(--accent-2) !important;
+}
+
+path[fill="var(--status-danger)"]
+
+/* vencord game activity strikethrough  */
+    {
+    fill: var(--accent-2) !important;
+}
+
+.theme-dark {
+    --blue-345: var(--accent-1);
+    /* links  */
+    --brand-260: var(--accent-2);
+    /* "NEW" channel list indicator  */
+    --brand-360: var(--accent-2);
+    /* bot labels, dm button, spotify progressbar  */
+    --brand-430: var(--accent-4);
+    /* send button hover  */
+    --brand-500: var(--accent-3);
+    /* buttons  */
+    --brand-560: var(--accent-4);
+    /* button hovered  */
+    --brand-600: var(--accent-5);
+    /* button pressed  */
+    --mention-background: var(--mention);
+    --mention-foreground: var(--accent-2);
+    --background-message-highlight: var(--mention);
+    --background-message-highlight-hover: var(--mention-hover);
+}
+
+/* settings checkbuttons  */
+.container__87bf1.checked__87bf1 {
+    background: var(--accent-3) !important;
+}
+
+/* replace ping yellow  */
+.theme-dark {
+    --background-mentioned: var(--mention);
+    --background-mentioned-hover: var(--mention-hover);
+}
+
+/* mention message left edge  */
+.mentioned__5126c:before {
+    background: var(--accent-3) !important;
+}
+
+/* replace green  */
+.theme-dark {
+    --green-360: var(--accent-2);
+    /* replace other green stuff  */
+    --green-430: var(--accent-3);
+    /* green buttons (like invite)  */
+    --green-500: var(--accent-4);
+    /* green button hover  */
+    --green-530: var(--accent-5);
+    /* green button click  */
+    --text-positive: var(--accent-1);
+}
+
+/* context menu hover color  */
+.colorDefault_c1e9c4.focused_c1e9c4 {
+    background-color: var(--accent-5);
+}
+
+/* Add danger colours to dangerous user actions  */
+#user-context-close-dm,
+#user-context-remove-friend,
+#user-context-block {
+    color: var(--accent-2);
+}
+
+#user-context-close-dm:active,
+#user-context-remove-friend:active,
+#user-context-block:active {
+    background-color: var(--accent-5) !important;
+    color: var(--white-500) !important;
+}
+
+#user-context-close-dm[class*="focused_"],
+#user-context-remove-friend[class*="focused_"],
+#user-context-block[class*="focused_"] {
+    background-color: var(--accent-5);
+    color: var(--white-500);
+}
+
+/* microphone not working warning  */
+.notice__6e2b9 {
+    background-color: var(--mention-hover);
+}
+
+/* automod  */
+.automodMessage__5126c {
+    background-color: var(--accent-2);
+}
+
+.shieldIcon_b7ab2c {
+    color: var(--accent-2);
+}
+
+/* remove attachment button  */
+.removeMosaicItemHoverButton__6c706:hover {
+    background-color: var(--accent-1);
+}
+
+/* poll  */
+.votePercentageBar__4c520 {
+    background: var(--mention-hover);
+}
+
+/* server owner ico  */
+svg[aria-label="Server Owner"] {
+    color: var(--accent-1);
+}
+
+/*ping */
+.message__5126c.mentioned__5126c {
+    background-color: var(--mention);
+}
+
+.message__5126c.mentioned__5126c:hover {
+    background-color: var(--mention-hover) !important;
+}
+
+/* new message bar  */
+.newMessagesBar__0f481::before {
+    background: var(--accent-3);
+}
+
+/* voice connected  */
+.rtcConnectionStatusConnected__06d62 {
+    color: var(--accent-1) !important;
+}
+
+/*Bot tag */
+.botTagRegular__82f07 {
+    background-color: var(--accent-5);
+}
