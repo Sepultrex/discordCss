@@ -44,128 +44,130 @@
 @import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
 /*Channel Tweaks*/
 @import url("https://aushevahmad.github.io/awesome-css/modules/channeltweaks.css");
+/*sol alt menü*/
+@import url("https://dablulite.github.io/css-snippets/UserReimagined/import.css");
 
 
 /*Root*/
 :root {
-	/* top left corner text */
-	--corner-text: 'Asopusun güzeller güzeli kızı';
-	/* top right corner menu */
-	--bartender-width: 3ch;
+    /* top left corner text */
+    --corner-text: 'Asopusun güzeller güzeli kızı';
+    /* top right corner menu */
+    --bartender-width: 3ch;
 
-	/* font, change to 'gg sans' for default discord font*/
-	--font: 'figtree';
+    /* font, change to 'gg sans' for default discord font*/
+    --font: 'figtree';
 
-	/* colors */
-	--snpc-S1: hsl(32, 40%, 10%);
+    /* colors */
+    --snpc-S1: hsl(32, 40%, 10%);
 
-	--snpc-00: hsla(30, 22%, 10%, 0.5);
-	--snpc-01: hsl(32, 20%, 10%);
-	--snpc-02: hsl(32, 83%, 37%);
-	--snpc-03: hsl(32, 40%, 30%);
-	--snpc-04: hsl(32, 50%, 40%);
-	--snpc-05: hsl(32, 60%, 50%);
-	--snpc-06: hsl(32, 70%, 60%);
-	--snpc-07: hsl(32, 80%, 70%);
-	--snpc-08: hsl(32, 90%, 80%);
-	--snpc-09: hsl(32, 100%, 90%);
+    --snpc-00: hsla(30, 22%, 10%, 0.5);
+    --snpc-01: hsl(32, 20%, 10%);
+    --snpc-02: hsl(32, 83%, 37%);
+    --snpc-03: hsl(32, 40%, 30%);
+    --snpc-04: hsl(32, 50%, 40%);
+    --snpc-05: hsl(32, 60%, 50%);
+    --snpc-06: hsl(32, 70%, 60%);
+    --snpc-07: hsl(32, 80%, 70%);
+    --snpc-08: hsl(32, 90%, 80%);
+    --snpc-09: hsl(32, 100%, 90%);
 
-	--text-0: white;
-	--text-1: var(--text-2);
-	--text-2: hsl(0, 0%, 100%);
-	--text-3: hsl(220, 15%, 72%);
-	--text-4: hsl(220, 15%, 72%);
-	--text-5: hsl(220, 15%, 35%);
+    --text-0: white;
+    --text-1: var(--text-2);
+    --text-2: hsl(0, 0%, 100%);
+    --text-3: hsl(220, 15%, 72%);
+    --text-4: hsl(220, 15%, 72%);
+    --text-5: hsl(220, 15%, 35%);
 
-	/* color of links */
-	--accent-1: var(--snpc-07);
-	/* color of unread dividers and some indicators */
-	--accent-2: var(--snpc-05);
-	/* color of accented buttons */
-	--accent-3: var(--snpc-05);
-	/* color of accented buttons when hovered */
-	--accent-4: var(--snpc-06);
-	/* color of accented buttons when clicked */
-	--accent-5: var(--snpc-02);
-	/* color of mentions and messages that mention you */
-	--mention: var(--snpc-01);
-	/* color of mentions and messages that mention you when hovered */
-	--mention-hover: var(--snpc-00);
+    /* color of links */
+    --accent-1: var(--snpc-07);
+    /* color of unread dividers and some indicators */
+    --accent-2: var(--snpc-05);
+    /* color of accented buttons */
+    --accent-3: var(--snpc-05);
+    /* color of accented buttons when hovered */
+    --accent-4: var(--snpc-06);
+    /* color of accented buttons when clicked */
+    --accent-5: var(--snpc-02);
+    /* color of mentions and messages that mention you */
+    --mention: var(--snpc-01);
+    /* color of mentions and messages that mention you when hovered */
+    --mention-hover: var(--snpc-00);
 
-	--brand-experiment: var(--snpc-01);
-	--status-danger: var(--accent-2);
+    --brand-experiment: var(--snpc-01);
+    --status-danger: var(--accent-2);
 
-	/* small server list */
-	--HSL-server-icon-size: 35px;
-	/* Default: 40px */
+    /* small server list */
+    --HSL-server-icon-size: 35px;
+    /* Default: 40px */
 
-	--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
-	--server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
-	--server-container: calc(var(--server-size) + 20px);
+    --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+    --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+    --server-container: calc(var(--server-size) + 20px);
 
-	/* Animations */
-	--unread-bar-transition: 0.2s ease;
+    /* Animations */
+    --unread-bar-transition: 0.2s ease;
 
-	/* spacing :3 */
-	--spacing: 7px;
+    /* spacing :3 */
+    --spacing: 7px;
 
-	/* font family */
-	--font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font family */
+    --font-primary: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: var(--font), 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* small server list */
 #app-mount .guilds_c48ade {
-	width: var(--server-container);
+    width: var(--server-container);
 }
 
 #app-mount .guilds_c48ade .svg_cc5dd2,
 #app-mount .guilds_c48ade .wrapper_cc5dd2,
 #app-mount .guilds_c48ade .guildsError-b7zR5H,
 #app-mount .guilds_c48ade .placeholderMask__87847 {
-	width: var(--server-size);
-	height: var(--server-size);
+    width: var(--server-size);
+    height: var(--server-size);
 }
 
 #app-mount .guilds_c48ade [class*=listItem]:not([class*=listItemWrapper]) {
-	width: var(--server-container);
+    width: var(--server-container);
 }
 
 /* microphone not working warning */
 .notice__6e2b9 {
-	background-color: var(--snpc-04);
+    background-color: var(--snpc-04);
 }
 
 /* automod */
 .automodMessage__5126c {
-	background-color: var(--snpc-S1);
+    background-color: var(--snpc-S1);
 }
 
 .shieldIcon_b7ab2c {
-	color: var(--snpc-07);
+    color: var(--snpc-07);
 }
 
 /* remove attachment button */
 .removeMosaicItemHoverButton__6c706:hover {
-	background-color: var(--snpc-04);
+    background-color: var(--snpc-04);
 }
 
 /* poll */
 .votePercentageBar__4c520 {
-	background: var(--snpc-00);
+    background: var(--snpc-00);
 }
 
 /* server owner ico */
 svg[aria-label="Server Owner"] {
-	color: var(--snpc-07);
+    color: var(--snpc-07);
 }
 
 .message__5126c.replying__5126c.selected__5126c,
 .mouse-mode.full-motion .message__5126c.replying__5126c:hover
 
 /* fix reply message hover */
-	{
-	background: var(--snpc-00);
+    {
+    background: var(--snpc-00);
 }
 
 /* idk */
@@ -237,207 +239,207 @@ svg[aria-label="Server Owner"] {
 .theme-light .tooltipGreen__382e7
 
 /* tooltip text like vc latency */
-	{
-	color: var(--text-0);
+    {
+    color: var(--text-0);
 }
 
 /* vencord spotify player support */
 #vc-spotify-player {
-	--vc-spotify-green: var(--snpc-06);
+    --vc-spotify-green: var(--snpc-06);
 }
 
 /* hide unread bar on hover */
 .messagesWrapper__36d07 {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .newMessagesBar__0f481 {
-	top: -48px;
-	height: 72px;
-	transition: top var(--unread-bar-transition);
-	background: none;
-	box-shadow: none;
-	border-radius: 0;
+    top: -48px;
+    height: 72px;
+    transition: top var(--unread-bar-transition);
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .newMessagesBar__0f481::before {
-	content: '';
-	background: var(--accent-3);
-	width: 100%;
-	position: absolute;
-	height: 32px;
-	border-radius: 10px;
+    content: '';
+    background: var(--accent-3);
+    width: 100%;
+    position: absolute;
+    height: 32px;
+    border-radius: 10px;
 }
 
 .newMessagesBar__0f481:hover {
-	top: -12px;
+    top: -12px;
 }
 
 .top__7aaec>.containerPadding__7aaec {
-	padding: 16px;
-	margin-top: -40px;
-	transition: margin-top var(--unread-bar-transition);
+    padding: 16px;
+    margin-top: -40px;
+    transition: margin-top var(--unread-bar-transition);
 }
 
 .top__7aaec:hover>.containerPadding__7aaec:hover {
-	margin-top: -12px;
+    margin-top: -12px;
 }
 
 .bottom__7aaec>.containerPadding__7aaec {
-	padding: 16px;
-	margin-bottom: -40px;
-	transition: margin-bottom var(--unread-bar-transition);
+    padding: 16px;
+    margin-bottom: -40px;
+    transition: margin-bottom var(--unread-bar-transition);
 }
 
 .bottom__7aaec>.containerPadding__7aaec:hover {
-	margin-bottom: -12px;
+    margin-bottom: -12px;
 }
 
 /* custom dm button */
 .childWrapper__6e9f8>svg:not(.favoriteIcon_c9fddf) {
-	display: none;
+    display: none;
 }
 
 /* custom dm button background instead of wumpus? */
 .childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf)) {
-	background: url('https://cdn.discordapp.com/emojis/1085365741685047306.gif?size=128&quality=lossless');
-	background-color: transparent !important;
-	background-size: cover;
+    background: url('https://cdn.discordapp.com/emojis/1085365741685047306.gif?size=128&quality=lossless');
+    background-color: transparent !important;
+    background-size: cover;
 }
 
 /* top corner title */
 [class^='wordmarkWindows'] {
-	padding: 4px var(--spacing);
+    padding: 4px var(--spacing);
 }
 
 [class^='wordmarkWindows']>svg {
-	display: none;
+    display: none;
 }
 
 [class^='wordmarkWindows']::after {
-	content: var(--corner-text);
-	display: block;
-	position: relative;
-	height: 16px;
-	line-height: 16px;
-	font-family: var(--font);
-	font-size: 13px;
-	font-weight: 900;
-	color: var(--text-5);
-	transform: scaleX(1.2);
-	margin-left: 12px;
+    content: var(--corner-text);
+    display: block;
+    position: relative;
+    height: 16px;
+    line-height: 16px;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--text-5);
+    transform: scaleX(1.2);
+    margin-left: 12px;
 }
 
 /* rearrange toolbar */
 a[href="https://support.discord.com"]
 
 /* hide help */
-	{
-	display: none;
+    {
+    display: none;
 }
 
 .search__49676 {
-	order: 1;
-	margin: 0 4px 0 -5px;
+    order: 1;
+    margin: 0 4px 0 -5px;
 }
 
 .chat_f75fb0:has(.searchResultsWrap_a9e706) .searchBar__97492 {
-	width: 394px !important;
-	margin-left: calc(var(--spacing) + 8px);
+    width: 394px !important;
+    margin-left: calc(var(--spacing) + 8px);
 }
 
 .chat_f75fb0:has(.userPanelOuter_c69a7b) .searchBar__97492 {
-	width: 316px !important;
-	margin-left: calc(var(--spacing) + 8px);
+    width: 316px !important;
+    margin-left: calc(var(--spacing) + 8px);
 }
 
 .chat_f75fb0:has(.membersWrap_c8ffbb) .searchBar__97492 {
-	width: 150px !important;
-	margin-left: calc(var(--spacing) + 8px);
+    width: 150px !important;
+    margin-left: calc(var(--spacing) + 8px);
 }
 
 /*i'm new here, say hi! */
 [class*=newMemberBadge]:before {
-	content: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-hi.gif?size=64&quality=lossless);
-	transform: translate(-100%, -110%);
-	display: inline-block;
-	scale: 0.32;
+    content: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-hi.gif?size=64&quality=lossless);
+    transform: translate(-100%, -110%);
+    display: inline-block;
+    scale: 0.32;
 }
 
 /* ryo loader */
 .container_a2f514.fixClipping_efbae7>.content_a2f514 {
-	position: relative;
+    position: relative;
 }
 
 .container_a2f514.fixClipping_efbae7>.content_a2f514 .ready_a2f514 {
-	display: none;
+    display: none;
 }
 
 .container_a2f514.fixClipping_efbae7>.content_a2f514 .ready_a2f514+.text_a2f514 {
-	top: 50px;
+    top: 50px;
 }
 
 .container_a2f514.fixClipping_efbae7>.content_a2f514::before {
-	content: "";
-	position: absolute;
-	bottom: 10px;
-	left: calc(50% - 100px);
-	width: 200px;
-	height: 200px;
-	background: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-loading.gif") center/80% no-repeat !important;
-	image-rendering: pixelated;
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-loading.gif") center/80% no-repeat !important;
+    image-rendering: pixelated;
 }
 
 /* konata */
 [class^="panels_c48ade"]::before {
-	content: "";
-	width: 50px;
-	height: 50px;
-	left: 185px;
-	margin-top: -54px;
-	position: absolute;
-	background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-guita50.gif");
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: 185px;
+    margin-top: -54px;
+    position: absolute;
+    background-image: url("https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-guita50.gif");
 }
 
 /* Custom Emoji Button */
 .sprite__04eed.spriteColored__04eed {
-	background-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button-clicked.png);
-	background-size: 24px;
+    background-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button-clicked.gif);
+    background-size: 24px;
 }
 
 .sprite__04eed.spriteGreyscale__04eed {
-	mask-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button.gif);
-	mask-size: 24px;
+    mask-image: url(https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-emoji-button.gif);
+    mask-size: 24px;
 }
 
 /* icon fix for muted channels */
 [class*="modeMuted_"]:has([class^="icon_"]) [class^="name_"] {
-	color: var(--channel-icon);
-	opacity: 35%;
+    color: var(--channel-icon);
+    opacity: 35%;
 }
 
 /*silly vencord settings gif changer */
 img[role="presentation"] {
-	content: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-idle.gif') !important;
-	transform: rotate(0deg) !important;
+    content: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-idle.gif') !important;
+    transform: rotate(0deg) !important;
 }
 
 [id*="popout_"]::after,
 [class*=menu]::after {
-	content: "";
-	position: absolute;
-	top: -50px;
-	right: 10px;
-	width: 50px;
-	height: 50px;
-	background-image: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-peek.png');
-	background-size: cover;
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://raw.githubusercontent.com/Sepultrex/discordCss/refs/heads/main/img/ryo-peek.png');
+    background-size: cover;
 }
 
 
 /* set channel status */
 .linkBottom__2ea32 {
-	display: block;
+    display: block;
 }
 
 /* useless things */
@@ -478,104 +480,91 @@ img[role="presentation"] {
 #user-context-verify,
 #user-context-add-friend-nickname,
 #user-context-apps {
-	display: none;
+    display: none;
 }
 
 [class^=tooltip]
 
 /* Allow the server tooltip to fit the entire server name in one line */
-	{
-	max-width: unset !important;
-	/* allow it to be larger */
+    {
+    max-width: unset !important;
+    /* allow it to be larger */
 }
 
 /* ismi "hidefolder" olan dosyaları gizler*/
 div[data-dnd-name="hidefolder"] {
-	display: none !important;
+    display: none !important;
 }
 
 /*clan tag shit*/
 [class*="chipletContainerInner_"]>[class*="text_"] {
-	font-size: 0
+    font-size: 0
 }
 
 [class*="chipletContainerInner_"] {
-	display: inline;
-	padding: 0 2px 0 4px;
+    display: inline;
+    padding: 0 2px 0 4px;
 }
 
 /* OMG İ HATE BADGESSSSSS*/
 div[class="container__8061a"] {
-	display: none;
+    display: none;
 }
 
-.role_dfa8b6 {
-	transform: translate(0);
-	overflow: hidden;
-	border: 0;
-
-	--transparency: .4;
-	/*Change Background Opacity*/
-	border-radius: 5px;
-	/*Change Roundness of Roles*/
+/*rol renkleri*/
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
 }
 
-.role_dfa8b6 .roleRemoveIcon_dfa8b6 {
-	margin: 0;
-	left: unset;
-	transform: translate(16%, -48%);
+.role_dfa8b6.pill_dfa8b6>span {
+    z-index: 1;
 }
 
-.role_dfa8b6 .roleRemoveButton_dfa8b6 {
-	position: static;
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
 }
 
-.role_dfa8b6 .roleCircle_dfa8b6:after {
-	content: '';
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: inherit;
-	opacity: var(--transparency);
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
 }
 
-/* --------------- Separated the code due to position difference */
-.role__48c1c {
-	transform: translate(0);
-	overflow: hidden;
-	border: 0;
-
-	--transparency: .4;
-	border-radius: 5px;
-}
-
-.role__48c1c .roleRemoveIcon__48c1c {
-	margin: 0;
-	left: unset;
-	transform: translate(50%, -50%);
-}
-
-.role__48c1c .roleRemoveButton_dfa8b6 {
-	position: static;
-}
-
-.role__48c1c .roleCircle__4f569:after {
-	content: '';
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: inherit;
-	opacity: var(--transparency);
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
 }
 
 /* damn activites? dont care lol*/
 .membersGroup_c8ffbb:has(>.headerContainer__095fe),
 .membersWrap_c8ffbb .openOnHover__0f2e8 {
-	display: none !important;
+    display: none !important;
+}
+
+/* Hide add a server button */
+[aria-label="Add a Server"] {
+    display: none !important;
+}
+
+/* pin menu*/
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]) {
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-overlay-1, var(--background-secondary));
 }
