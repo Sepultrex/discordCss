@@ -2,14 +2,15 @@
 
 Add this link on top of your customcss 
 
-You have to enable Vencord plugin ThemeAttributes to use [SettingsIcons](https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css)
+
 
 ```
 @import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/snptweak.css");
 ```
 
 > [!WARNING]
-> Dont use Betterdiscord!
+> You have to enable Vencord plugin <i><b>ThemeAttributes</b></i> for [SettingsIcons](https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css)
+> and <i><b>Spotify Controls</b></i> for [BetterSpotifyPlayer](https://github.com/Panniku/vc-snippets/blob/main/BetterSpotifyPlayer.css)
 
 # Preview
 ![Ekran görüntüsü 2024-11-18 153741](https://github.com/user-attachments/assets/0acae49e-c81f-4882-a0f2-f77bdbae7ad4)
