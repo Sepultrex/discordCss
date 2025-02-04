@@ -2,11 +2,17 @@
 
 Add this link on top of your customcss 
 
-
+```
+@import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/snp-tweak.css");
+```
+<br>
+if you have canary or different version of discord Add this link on top of your customcss 
 
 ```
-@import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/snptweak.css");
+@import url("https://raw.githubusercontent.com/sepultrex/discordCss/main/snp-tweak-canary.css");
 ```
+
+
 
 > [!WARNING]
 > You have to enable Vencord plugin <i><b>ThemeAttributes</b></i> for [SettingsIcons](https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css)
