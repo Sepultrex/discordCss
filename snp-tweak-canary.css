@@ -389,7 +389,11 @@ span[class^="botTag"]::after {
     max-height: 90px;
 }
 
-/* COLOR  */
+/* Allow the server tooltip to fit the entire server name in one line */
+[class^=tooltip] {
+    max-width: unset !important; /* allow it to be larger */ }
+
+/* COLOR ✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕✕  */
 
 /* replace ping/strikethrough red  */
 .numberBadge__2b1f5,
